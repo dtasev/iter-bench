@@ -1,0 +1,377 @@
+
+	Command being timed: "savu 24737.nxs cpu_rec out/"
+	User time (seconds): 4.26
+	System time (seconds): 0.60
+	Percent of CPU this job got: 113%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.29
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 84732
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 21951
+	Voluntary context switches: 160
+	Involuntary context switches: 17311
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs cpu_rec out/"
+	User time (seconds): 12.98
+	System time (seconds): 4.54
+	Percent of CPU this job got: 646%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.70
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 66580
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 198287
+	Voluntary context switches: 6724
+	Involuntary context switches: 777482
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 43920
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs cpu_rec_10it out/"
+	User time (seconds): 32.32
+	System time (seconds): 0.60
+	Percent of CPU this job got: 101%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.33
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 84696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 21984
+	Voluntary context switches: 151
+	Involuntary context switches: 5792
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs cpu_rec_10it out/"
+	User time (seconds): 67.05
+	System time (seconds): 9.78
+	Percent of CPU this job got: 899%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 68228
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 198189
+	Voluntary context switches: 6439
+	Involuntary context switches: 1341123
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 43920
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs cpu_rec_50it out/"
+	User time (seconds): 182.63
+	System time (seconds): 0.84
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 3:02.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 86704
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 21156
+	Voluntary context switches: 146
+	Involuntary context switches: 52411
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs cpu_rec_50it out/"
+	User time (seconds): 302.67
+	System time (seconds): 8.81
+	Percent of CPU this job got: 931%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:33.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 65612
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 196733
+	Voluntary context switches: 6663
+	Involuntary context switches: 821733
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 44040
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs cpu_rec_100it out/"
+	User time (seconds): 311.67
+	System time (seconds): 0.62
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:11.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 85352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 22117
+	Voluntary context switches: 149
+	Involuntary context switches: 311
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs cpu_rec_100it out/"
+	User time (seconds): 598.02
+	System time (seconds): 5.28
+	Percent of CPU this job got: 987%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:01.08
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 67668
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 195662
+	Voluntary context switches: 7213
+	Involuntary context switches: 740901
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 44040
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs gpu_rec out/"
+	User time (seconds): 0.82
+	System time (seconds): 0.82
+	Percent of CPU this job got: 147%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.11
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 213404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 26676
+	Voluntary context switches: 244
+	Involuntary context switches: 112
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs gpu_rec out/"
+	User time (seconds): 6.91
+	System time (seconds): 8.92
+	Percent of CPU this job got: 849%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 210248
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 204664
+	Voluntary context switches: 4560
+	Involuntary context switches: 746271
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 43904
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs gpu_rec_10it out/"
+	User time (seconds): 1.02
+	System time (seconds): 1.09
+	Percent of CPU this job got: 135%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 215116
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 28050
+	Voluntary context switches: 190
+	Involuntary context switches: 29167
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs gpu_rec_10it out/"
+	User time (seconds): 8.46
+	System time (seconds): 14.89
+	Percent of CPU this job got: 890%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.62
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 213144
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 202759
+	Voluntary context switches: 4294
+	Involuntary context switches: 737292
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 43912
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs gpu_rec_50it out/"
+	User time (seconds): 2.00
+	System time (seconds): 2.27
+	Percent of CPU this job got: 115%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.71
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 220952
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 28047
+	Voluntary context switches: 237
+	Involuntary context switches: 257
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27216
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs gpu_rec_50it out/"
+	User time (seconds): 14.87
+	System time (seconds): 40.09
+	Percent of CPU this job got: 952%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.76
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 217988
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 206852
+	Voluntary context switches: 3545
+	Involuntary context switches: 862881
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 43904
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu 24737.nxs gpu_rec_100it out/"
+	User time (seconds): 3.28
+	System time (seconds): 3.49
+	Percent of CPU this job got: 107%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.31
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 228432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 29899
+	Voluntary context switches: 288
+	Involuntary context switches: 29967
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 27160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+======
+	Command being timed: "./savu_mpi_local.sh 24737.nxs gpu_rec_100it out/"
+	User time (seconds): 21.88
+	System time (seconds): 69.48
+	Percent of CPU this job got: 970%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 226844
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 9
+	Minor (reclaiming a frame) page faults: 206516
+	Voluntary context switches: 3198
+	Involuntary context switches: 830005
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 43904
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
