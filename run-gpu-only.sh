@@ -1,7 +1,7 @@
 #!/bin/bash
-file=times-gpu-only.txt
+file=times-$(hostname)-gpu-only.txt
 echo "" > $file
-output=out-gpu-only.txt
+output=out-$(hostname)-gpu-only.txt
 echo "" > $output
 set -x
 

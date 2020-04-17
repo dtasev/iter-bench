@@ -1,7 +1,7 @@
 #!/bin/bash
-file=times.txt
+file=times-$(hostname).txt
 echo "" > $file
-output=out.txt
+output=out-$(hostname).txt
 echo "" > $output
 set -x
 
