@@ -1,11 +1,11 @@
 #!/bin/bash
-file=times.txt
+file=times-gpu-only.txt
 echo "" > $file
-output=out.txt
+output=out-gpu-only.txt
 echo "" > $output
 set -x
 
-pls="cpu_rec cpu_rec_10it cpu_rec_50it cpu_rec_100it gpu_rec gpu_rec_10it gpu_rec_50it gpu_rec_100it"
+pls="gpu_rec gpu_rec_10it gpu_rec_50it gpu_rec_100it gpu_rec_200it gpu_rec_300it gpu_rec_500it gpu_rec_700it gpu_rec_1000it"
 
 for pl in $pls; do
     TIME="/usr/bin/time -ao $file -v"
@@ -16,4 +16,4 @@ done
 
 set +x
 
-grep -e "Command" -e "Elapsed" $file
+grep -e "Command" -e "Elapsed" $file 
