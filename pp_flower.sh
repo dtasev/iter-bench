@@ -1,8 +1,8 @@
 #!/bin/bash
 
-file=times-$(hostname)-recon.txt
+file=times-$(hostname)-pp.txt
 echo "" > $file
-output=out-$(hostname)-recon.txt
+output=out-$(hostname)-pp.txt
 echo "" > $output
 TIME="/usr/bin/time -ao $file -v"
 set -x
