@@ -1,0 +1,191 @@
+
+Plugin list check complete!
+*Running the AstraReconGpu plugin*
+AstraReconGpu -   0% complete
+/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/plugins/reconstructions/base_recon.py:1: RuntimeWarning: divide by zero encountered in log
+  # Copyright 2014 Diamond Light Source Ltd.
+AstraReconGpu -   1% complete
+AstraReconGpu -   3% complete
+AstraReconGpu -   4% complete
+AstraReconGpu -   6% complete
+AstraReconGpu -   7% complete
+AstraReconGpu -   9% complete
+AstraReconGpu -  10% complete
+AstraReconGpu -  12% complete
+AstraReconGpu -  14% complete
+AstraReconGpu -  15% complete
+AstraReconGpu -  17% complete
+AstraReconGpu -  18% complete
+AstraReconGpu -  20% complete
+AstraReconGpu -  21% complete
+AstraReconGpu -  23% complete
+AstraReconGpu -  25% complete
+AstraReconGpu -  26% complete
+AstraReconGpu -  28% complete
+AstraReconGpu -  29% complete
+AstraReconGpu -  31% complete
+AstraReconGpu -  32% complete
+AstraReconGpu -  34% complete
+AstraReconGpu -  35% complete
+AstraReconGpu -  37% complete
+AstraReconGpu -  39% complete
+AstraReconGpu -  40% complete
+AstraReconGpu -  42% complete
+AstraReconGpu -  43% complete
+AstraReconGpu -  45% complete
+AstraReconGpu -  46% complete
+AstraReconGpu -  48% complete
+AstraReconGpu -  50% complete
+AstraReconGpu -  51% complete
+AstraReconGpu -  53% complete
+AstraReconGpu -  54% complete
+AstraReconGpu -  56% complete
+AstraReconGpu -  57% complete
+AstraReconGpu -  59% complete
+AstraReconGpu -  60% complete
+AstraReconGpu -  62% complete
+AstraReconGpu -  64% complete
+AstraReconGpu -  65% complete
+AstraReconGpu -  67% complete
+AstraReconGpu -  68% complete
+AstraReconGpu -  70% complete
+AstraReconGpu -  71% complete
+AstraReconGpu -  73% complete
+AstraReconGpu -  75% complete
+AstraReconGpu -  76% complete
+AstraReconGpu -  78% complete
+AstraReconGpu -  79% complete
+AstraReconGpu -  81% complete
+AstraReconGpu -  82% complete
+AstraReconGpu -  84% complete
+AstraReconGpu -  85% complete
+AstraReconGpu -  87% complete
+AstraReconGpu -  89% complete
+AstraReconGpu -  90% complete
+AstraReconGpu -  92% complete
+AstraReconGpu -  93% complete
+AstraReconGpu -  95% complete
+AstraReconGpu -  96% complete
+AstraReconGpu -  98% complete
+AstraReconGpu - 100% complete
+AstraReconGpu - Nothing to Report
+***********************
+* Processing Complete *
+***********************
+Traceback (most recent call last):
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/meta_data.py", line 80, in get
+    accum_value = function(x, accum_value)
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/meta_data.py", line 73, in <lambda>
+    function = lambda k, d: d[k]
+KeyError: 'run_type'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/experiment_collection.py", line 64, in __meta_data_setup
+    rtype = self.meta_data.get('run_type')
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/meta_data.py", line 88, in get
+    raise KeyError(errorStr)
+KeyError: "The metadata ['run_type'] does not exist"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dt1107582/savuinstall/savu/bin/savu", line 11, in <module>
+    load_entry_point('savu==3.0', 'console_scripts', 'savu')()
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/tomo_recon.py", line 215, in main
+    plugin_runner = pRunner(options)
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/core/plugin_runner.py", line 43, in __init__
+    self.exp = Experiment(options)
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/experiment_collection.py", line 49, in __init__
+    self.__meta_data_setup(options["process_file"])
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/experiment_collection.py", line 73, in __meta_data_setup
+    template=template)
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/data/plugin_list.py", line 85, in _populate_plugin_list
+    plugin_file = h5py.File(filename, 'r')
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/h5py/_hl/files.py", line 173, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 88, in h5py.h5f.open
+OSError: Unable to open file (unable to open file: name = 'flower_recon-10it.nxs', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+usage: savu [-h] [--version] [-f FOLDER] [-d TMP] [-t TEMPLATE] [-l LOG] [-v]
+            [-q] [--lustre_workaround] [--system_params SYSTEM_PARAMS]
+            [--checkpoint [{plugin,subplugin}]]
+            in_file process_list out_folder
+savu: error: the following arguments are required: out_folder
+Plugin list check complete!
+*Running the AstraReconGpu plugin*
+AstraReconGpu -   0% complete
+/home/dt1107582/savuinstall/savu/lib/python3.7/site-packages/savu-3.0-py3.7.egg/savu/plugins/reconstructions/base_recon.py:1: RuntimeWarning: divide by zero encountered in log
+  # Copyright 2014 Diamond Light Source Ltd.
+AstraReconGpu -   1% complete
+AstraReconGpu -   3% complete
+AstraReconGpu -   4% complete
+AstraReconGpu -   6% complete
+AstraReconGpu -   7% complete
+AstraReconGpu -   9% complete
+AstraReconGpu -  10% complete
+AstraReconGpu -  12% complete
+AstraReconGpu -  14% complete
+AstraReconGpu -  15% complete
+AstraReconGpu -  17% complete
+AstraReconGpu -  18% complete
+AstraReconGpu -  20% complete
+AstraReconGpu -  21% complete
+AstraReconGpu -  23% complete
+AstraReconGpu -  25% complete
+AstraReconGpu -  26% complete
+AstraReconGpu -  28% complete
+AstraReconGpu -  29% complete
+AstraReconGpu -  31% complete
+AstraReconGpu -  32% complete
+AstraReconGpu -  34% complete
+AstraReconGpu -  35% complete
+AstraReconGpu -  37% complete
+AstraReconGpu -  39% complete
+AstraReconGpu -  40% complete
+AstraReconGpu -  42% complete
+AstraReconGpu -  43% complete
+AstraReconGpu -  45% complete
+AstraReconGpu -  46% complete
+AstraReconGpu -  48% complete
+AstraReconGpu -  50% complete
+AstraReconGpu -  51% complete
+AstraReconGpu -  53% complete
+AstraReconGpu -  54% complete
+AstraReconGpu -  56% complete
+AstraReconGpu -  57% complete
+AstraReconGpu -  59% complete
+AstraReconGpu -  60% complete
+AstraReconGpu -  62% complete
+AstraReconGpu -  64% complete
+AstraReconGpu -  65% complete
+AstraReconGpu -  67% complete
+AstraReconGpu -  68% complete
+AstraReconGpu -  70% complete
+AstraReconGpu -  71% complete
+AstraReconGpu -  73% complete
+AstraReconGpu -  75% complete
+AstraReconGpu -  76% complete
+AstraReconGpu -  78% complete
+AstraReconGpu -  79% complete
+AstraReconGpu -  81% complete
+AstraReconGpu -  82% complete
+AstraReconGpu -  84% complete
+AstraReconGpu -  85% complete
+AstraReconGpu -  87% complete
+AstraReconGpu -  89% complete
+AstraReconGpu -  90% complete
+AstraReconGpu -  92% complete
+AstraReconGpu -  93% complete
+AstraReconGpu -  95% complete
+AstraReconGpu -  96% complete
+AstraReconGpu -  98% complete
+AstraReconGpu - 100% complete
+AstraReconGpu - Nothing to Report
+***********************
+* Processing Complete *
+***********************

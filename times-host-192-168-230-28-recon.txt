@@ -1,0 +1,48 @@
+
+	Command being timed: "savu out/20200417142208_flower/flower_processed.nxs flower_recon.nxs out"
+	User time (seconds): 190.34
+	System time (seconds): 376.24
+	Percent of CPU this job got: 58%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 16:13.98
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1430032
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 154
+	Minor (reclaiming a frame) page faults: 12846337
+	Voluntary context switches: 145994
+	Involuntary context switches: 133970
+	Swaps: 0
+	File system inputs: 32
+	File system outputs: 67535824
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+	Command being timed: "savu out/20200417142208_flower/flower_processed.nxs flower_recon-10it.nxs out"
+	User time (seconds): 351.44
+	System time (seconds): 1450.71
+	Percent of CPU this job got: 85%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 34:58.87
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1672912
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 12089382
+	Voluntary context switches: 166656
+	Involuntary context switches: 162217
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 67902904
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
