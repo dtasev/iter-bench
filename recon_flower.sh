@@ -7,6 +7,8 @@ echo "" > $output
 TIME="/usr/bin/time -ao $file -v"
 set -x
 $TIME savu out/2*/flower_processed.nxs flower_recon.nxs out >> $output 2>&1
+$TIME savu out/2*/flower_processed.nxs flower_recon-10it.nxs out >> $output 2>&1
+
 # savu out
 
 set +x
