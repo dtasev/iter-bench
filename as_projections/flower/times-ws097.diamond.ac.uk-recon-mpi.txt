@@ -1,45 +1,45 @@
 
 	Command being timed: "./savu_mpi_local.sh out/20200422110328_dimitar/flower_processed.nxs flower_recon.nxs out"
-	User time (seconds): 3106.06
-	System time (seconds): 447.52
-	Percent of CPU this job got: 581%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:11.26
+	User time (seconds): 718.99
+	System time (seconds): 493.18
+	Percent of CPU this job got: 193%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 10:26.20
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 1344260
+	Maximum resident set size (kbytes): 1344096
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 116
-	Minor (reclaiming a frame) page faults: 70181874
-	Voluntary context switches: 116341
-	Involuntary context switches: 589984
+	Major (requiring I/O) page faults: 338
+	Minor (reclaiming a frame) page faults: 126044887
+	Voluntary context switches: 84050
+	Involuntary context switches: 77167
 	Swaps: 0
-	File system inputs: 33226736
-	File system outputs: 67845904
+	File system inputs: 22733168
+	File system outputs: 67847232
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 0
 	Command being timed: "./savu_mpi_local.sh out/20200422110328_dimitar/flower_processed.nxs flower_recon-10it.nxs out"
-	User time (seconds): 14713.49
-	System time (seconds): 1965.69
-	Percent of CPU this job got: 587%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 47:17.33
+	User time (seconds): 3638.29
+	System time (seconds): 2032.31
+	Percent of CPU this job got: 198%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 47:38.56
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 1466312
+	Maximum resident set size (kbytes): 1464316
 	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 379
-	Minor (reclaiming a frame) page faults: 98162678
-	Voluntary context switches: 175335
-	Involuntary context switches: 1674176
+	Major (requiring I/O) page faults: 300
+	Minor (reclaiming a frame) page faults: 124378038
+	Voluntary context switches: 136404
+	Involuntary context switches: 364319
 	Swaps: 0
-	File system inputs: 30340952
-	File system outputs: 68176584
+	File system inputs: 21514336
+	File system outputs: 68176328
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
