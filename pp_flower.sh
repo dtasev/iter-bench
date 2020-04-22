@@ -7,7 +7,6 @@ echo "" > $output
 TIME="/usr/bin/time -ao $file -v"
 set -x
 $TIME ./savu_mpi_local.sh $1 flower_pp.nxs out >> $output 2>&1
-# savu out
 
 set +x
 
