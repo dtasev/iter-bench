@@ -1,0 +1,1519 @@
+
+SAVU_MPI_LOCAL:: Running Job
+***********************************************
+	Running on 6 CPUs and 2 GPUs
+***********************************************
+savupath is: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg
+running on host: ws097.diamond.ac.uk
+Processes running are : 6
+running the savu mpi local job with requirements: GPU0,GPU1,CPU0,CPU1,CPU2,CPU3
+Using python at /dls_sw/apps/savu/2.4_RHEL7/miniconda/bin/python
+Running command: python /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/savu/tomo_recon.py out/20200422110328_dimitar/flower_processed.nxs flower_recon.nxs out -n GPU0,GPU1,CPU0,CPU1,CPU2,CPU3 -v 
+L          588 M000  GPU0   USER   User Log Started
+L          588 M000  GPU0   USER   User Log location is 'out/20200422115331_flower_processed/user.log'
+L          591 M000  GPU0   DEBUG  Rank : 0 - Size : 6 - host : ws097.diamond.ac.uk
+L          592 M000  CPU3   DEBUG  Rank : 5 - Size : 6 - host : ws097.diamond.ac.uk
+L          592 M000  GPU1   DEBUG  Rank : 1 - Size : 6 - host : ws097.diamond.ac.uk
+L          591 M000  CPU1   DEBUG  Rank : 3 - Size : 6 - host : ws097.diamond.ac.uk
+L          592 M000  CPU2   DEBUG  Rank : 4 - Size : 6 - host : ws097.diamond.ac.uk
+L          589 M000  CPU0   DEBUG  Rank : 2 - Size : 6 - host : ws097.diamond.ac.uk
+L          592 M000  GPU0   DEBUG  ip address is : 172.23.5.178
+L          593 M000  GPU0   DEBUG  Waiting at the _barrier
+L          593 M000  CPU2   DEBUG  ip address is : 172.23.5.178
+L          593 M000  GPU1   DEBUG  ip address is : 172.23.5.178
+L          593 M000  GPU1   DEBUG  Waiting at the _barrier
+L          593 M000  CPU2   DEBUG  Waiting at the _barrier
+L          591 M000  CPU0   DEBUG  ip address is : 172.23.5.178
+L          593 M000  CPU3   DEBUG  ip address is : 172.23.5.178
+L          591 M000  CPU0   DEBUG  Waiting at the _barrier
+L          593 M000  CPU1   DEBUG  ip address is : 172.23.5.178
+L          593 M000  CPU1   DEBUG  Waiting at the _barrier
+L          593 M000  CPU3   DEBUG  Waiting at the _barrier
+L          593 M000  GPU0   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L          591 M000  CPU0   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L          594 M000  CPU2   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L          593 M000  CPU3   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L          593 M000  CPU1   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L          594 M000  GPU1   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L          594 M000  CPU2   DEBUG  Waiting at the _barrier
+L          593 M000  CPU1   DEBUG  Waiting at the _barrier
+L          593 M000  GPU0   DEBUG  Waiting at the _barrier
+L          591 M000  CPU0   DEBUG  Waiting at the _barrier
+L          594 M000  GPU1   DEBUG  Waiting at the _barrier
+L          594 M000  CPU3   DEBUG  Waiting at the _barrier
+L          594 M000  GPU1   DEBUG  {'verbose': True, 'log_path': 'out/20200422115331_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422115331_flower_processed', 'out_path': 'out/20200422115331_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422115331_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon.nxs', 'email': None, 'nProcesses': 6, 'process': 1, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L          591 M000  CPU0   DEBUG  {'verbose': True, 'log_path': 'out/20200422115331_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422115331_flower_processed', 'out_path': 'out/20200422115331_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422115331_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon.nxs', 'email': None, 'nProcesses': 6, 'process': 2, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L          594 M000  CPU2   DEBUG  {'verbose': True, 'log_path': 'out/20200422115331_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422115331_flower_processed', 'out_path': 'out/20200422115331_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422115331_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon.nxs', 'email': None, 'nProcesses': 6, 'process': 4, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L          594 M000  CPU1   DEBUG  {'verbose': True, 'log_path': 'out/20200422115331_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422115331_flower_processed', 'out_path': 'out/20200422115331_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422115331_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon.nxs', 'email': None, 'nProcesses': 6, 'process': 3, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L          594 M000  GPU0   DEBUG  {'verbose': True, 'log_path': 'out/20200422115331_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422115331_flower_processed', 'out_path': 'out/20200422115331_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422115331_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon.nxs', 'email': None, 'nProcesses': 6, 'process': 0, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L          594 M000  CPU3   DEBUG  {'verbose': True, 'log_path': 'out/20200422115331_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422115331_flower_processed', 'out_path': 'out/20200422115331_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422115331_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon.nxs', 'email': None, 'nProcesses': 6, 'process': 5, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L          595 M000  CPU2   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L          595 M000  CPU3   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L          595 M000  GPU1   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L          595 M000  CPU1   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L          595 M000  GPU0   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L          592 M000  CPU0   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L          607 M000  GPU1   DEBUG  Testing nexus file
+L          607 M000  GPU1   INFO   Running the plugin list check
+L          608 M000  CPU2   DEBUG  Testing nexus file
+L          608 M000  CPU2   INFO   Running the plugin list check
+L          607 M000  CPU1   DEBUG  Testing nexus file
+L          608 M000  CPU1   INFO   Running the plugin list check
+L          608 M000  GPU0   DEBUG  Testing nexus file
+L          608 M000  GPU0   INFO   Running the plugin list check
+L          608 M000  CPU0   DEBUG  Testing nexus file
+L          608 M000  CPU0   INFO   Running the plugin list check
+L          613 M000  CPU3   DEBUG  Testing nexus file
+L          614 M000  CPU3   INFO   Running the plugin list check
+L          899 M000  CPU0   DEBUG  2 GPUs have been found.
+L          899 M000  CPU0   DEBUG  Running plugin loader
+L          899 M000  CPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          902 M000  CPU3   DEBUG  2 GPUs have been found.
+L          902 M000  CPU2   DEBUG  2 GPUs have been found.
+L          902 M000  GPU1   DEBUG  2 GPUs have been found.
+L          903 M000  CPU2   DEBUG  Running plugin loader
+L          902 M000  CPU3   DEBUG  Running plugin loader
+L          903 M000  GPU1   DEBUG  Running plugin loader
+L          902 M000  CPU3   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          903 M000  CPU2   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          903 M000  GPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          902 M000  CPU1   DEBUG  2 GPUs have been found.
+L          903 M000  CPU1   DEBUG  Running plugin loader
+L          903 M000  CPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          901 M000  CPU0   DEBUG  Running plugin main setup
+L          904 M000  GPU0   DEBUG  2 GPUs have been found.
+L          904 M000  GPU0   DEBUG  Running plugin loader
+L          904 M000  GPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          905 M000  CPU3   DEBUG  Running plugin main setup
+L          905 M000  GPU1   DEBUG  Running plugin main setup
+L          905 M000  CPU2   DEBUG  Running plugin main setup
+L          905 M000  CPU1   DEBUG  Running plugin main setup
+L          907 M000  GPU0   DEBUG  Running plugin main setup
+L          946 M000  GPU0   DEBUG  finished plugin loader
+L          946 M000  GPU0   DEBUG  Barrier 0: 6 processes expected: 
+L          947 M000  GPU1   DEBUG  finished plugin loader
+L          948 M000  GPU1   DEBUG  Barrier 0: 6 processes expected: 
+L          948 M000  CPU1   DEBUG  finished plugin loader
+L          948 M000  CPU3   DEBUG  finished plugin loader
+L          948 M000  CPU2   DEBUG  finished plugin loader
+L          948 M000  CPU3   DEBUG  Barrier 0: 6 processes expected: 
+L          948 M000  CPU1   DEBUG  Barrier 0: 6 processes expected: 
+L          948 M000  CPU2   DEBUG  Barrier 0: 6 processes expected: 
+L          947 M000  CPU0   DEBUG  finished plugin loader
+L          947 M000  CPU0   DEBUG  Barrier 0: 6 processes expected: 
+L          949 M000  CPU1   DEBUG  Running plugin loader
+L          950 M000  CPU3   DEBUG  Running plugin loader
+L          950 M000  GPU0   DEBUG  Running plugin loader
+L          950 M000  CPU2   DEBUG  Running plugin loader
+L          950 M000  GPU1   DEBUG  Running plugin loader
+L          947 M000  CPU0   DEBUG  Running plugin loader
+L          950 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          950 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          950 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          950 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          947 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          950 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          951 M000  GPU0   DEBUG  Running plugin main setup
+L          952 M000  GPU1   DEBUG  Running plugin main setup
+L          952 M000  CPU1   DEBUG  Running plugin main setup
+L          952 M000  CPU2   DEBUG  Running plugin main setup
+L          952 M000  CPU3   DEBUG  Running plugin main setup
+L          950 M000  CPU0   DEBUG  Running plugin main setup
+L          955 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402bd110> to 32
+L          955 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402bd110> to 1
+L          955 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402bd110> to 32
+L          955 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402bd110> to 1
+L          956 M000  GPU0   DEBUG  finished plugin loader
+L          956 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217573e90> to 32
+L          956 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499112de90> to 32
+L          956 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217573e90> to 1
+L          956 M000  GPU0   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L          956 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0473e90> to 32
+L          956 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499112de90> to 1
+L          956 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0473e90> to 1
+L          957 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331cc9e90> to 32
+L          957 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331cc9e90> to 1
+L          957 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217573e90> to 32
+L          957 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217573e90> to 1
+L          957 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499112de90> to 32
+L          957 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499112de90> to 1
+L          957 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0473e90> to 32
+L          957 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331cc9e90> to 32
+L          957 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0473e90> to 1
+L          957 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331cc9e90> to 1
+L          957 M000  GPU1   DEBUG  finished plugin loader
+L          957 M000  CPU3   DEBUG  finished plugin loader
+L          957 M000  CPU1   DEBUG  finished plugin loader
+L          957 M000  CPU2   DEBUG  finished plugin loader
+L          957 M000  GPU1   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L          955 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d0aee90> to 32
+L          955 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d0aee90> to 1
+L          958 M000  CPU3   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L          957 M000  CPU1   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L          958 M000  CPU2   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L          955 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d0aee90> to 32
+L          956 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d0aee90> to 1
+L          956 M000  CPU0   DEBUG  finished plugin loader
+L          956 M000  CPU0   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L          960 M000  GPU0   DEBUG  Running plugin loader
+L          960 M000  GPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          961 M000  CPU3   DEBUG  Running plugin loader
+L          960 M000  CPU1   DEBUG  Running plugin loader
+L          961 M000  CPU3   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          961 M000  GPU1   DEBUG  Running plugin loader
+L          961 M000  CPU2   DEBUG  Running plugin loader
+L          961 M000  CPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          961 M000  CPU2   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          961 M000  GPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          961 M000  GPU0   DEBUG  Running plugin main setup
+L          961 M000  CPU3   DEBUG  Running plugin main setup
+L          961 M000  CPU1   DEBUG  Running plugin main setup
+L          962 M000  CPU2   DEBUG  Running plugin main setup
+L          962 M000  GPU1   DEBUG  Running plugin main setup
+L          965 M000  CPU0   DEBUG  Running plugin loader
+L          965 M000  CPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          965 M000  CPU0   DEBUG  Running plugin main setup
+L          978 M000  GPU0   DEBUG  finished plugin loader
+L          978 M000  GPU0   DEBUG  Barrier 1: 6 processes expected: 
+L          979 M000  CPU1   DEBUG  finished plugin loader
+L          979 M000  CPU1   DEBUG  Barrier 1: 6 processes expected: 
+L          979 M000  CPU2   DEBUG  finished plugin loader
+L          979 M000  CPU3   DEBUG  finished plugin loader
+L          980 M000  CPU2   DEBUG  Barrier 1: 6 processes expected: 
+L          980 M000  CPU3   DEBUG  Barrier 1: 6 processes expected: 
+L          982 M000  GPU1   DEBUG  finished plugin loader
+L          982 M000  GPU1   DEBUG  Barrier 1: 6 processes expected: 
+L          980 M000  CPU0   DEBUG  finished plugin loader
+L          980 M000  CPU0   DEBUG  Barrier 1: 6 processes expected: 
+L          983 M000  CPU3   DEBUG  Running plugin loader
+L          983 M000  CPU1   DEBUG  Running plugin loader
+L          980 M000  CPU0   DEBUG  Running plugin loader
+L          983 M000  CPU2   DEBUG  Running plugin loader
+L          983 M000  GPU1   DEBUG  Running plugin loader
+L          983 M000  GPU0   DEBUG  Running plugin loader
+L          983 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          983 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          983 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          983 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          983 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          980 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L          981 M000  CPU0   DEBUG  Running plugin main setup
+L          984 M000  GPU0   DEBUG  Running plugin main setup
+L          984 M000  CPU2   DEBUG  Running plugin main setup
+L          984 M000  CPU1   DEBUG  Running plugin main setup
+L          984 M000  CPU3   DEBUG  Running plugin main setup
+L          984 M000  GPU1   DEBUG  Running plugin main setup
+L          984 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05bd10> to 32
+L          984 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05bd10> to 1
+L          985 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05bd10> to 32
+L          985 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05bd10> to 1
+L          985 M000  CPU0   DEBUG  finished plugin loader
+L          988 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c76d10> to 32
+L          987 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd10> to 32
+L          985 M000  CPU0   USER   Plugin list check complete!
+L          987 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd10> to 1
+L          987 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402dff50> to 32
+L          988 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c76d10> to 1
+L          987 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402dff50> to 1
+L          985 M000  CPU0   INFO   Setting up the experiment
+L          985 M000  CPU0   DEBUG  Running plugin loader
+L          988 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0420d10> to 32
+L          985 M000  CPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          988 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd10> to 32
+L          988 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0420d10> to 1
+L          988 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd10> to 1
+L          988 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402dff50> to 32
+L          988 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f27402dff50> to 1
+L          988 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c76d10> to 32
+L          988 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c76d10> to 1
+L          988 M000  CPU3   DEBUG  finished plugin loader
+L          988 M000  GPU0   DEBUG  finished plugin loader
+L          988 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0420d10> to 32
+L          986 M000  CPU0   DEBUG  Running plugin main setup
+L          988 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217520d10> to 32
+L          988 M000  CPU2   DEBUG  finished plugin loader
+L          988 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217520d10> to 1
+L          988 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb0420d10> to 1
+L          988 M000  CPU3   USER   Plugin list check complete!
+L          988 M000  GPU0   USER   Plugin list check complete!
+L          988 M000  CPU3   INFO   Setting up the experiment
+L          988 M000  CPU1   DEBUG  finished plugin loader
+L          989 M000  CPU2   USER   Plugin list check complete!
+L          989 M000  CPU3   DEBUG  Running plugin loader
+L          989 M000  CPU3   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          989 M000  CPU2   INFO   Setting up the experiment
+Plugin list check complete!
+L          989 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217520d10> to 32
+L          989 M000  GPU0   INFO   Setting up the experiment
+L          989 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8217520d10> to 1
+L          989 M000  CPU2   DEBUG  Running plugin loader
+L          989 M000  CPU1   USER   Plugin list check complete!
+L          989 M000  GPU0   DEBUG  Running plugin loader
+L          989 M000  CPU2   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          989 M000  GPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          989 M000  CPU1   INFO   Setting up the experiment
+L          989 M000  GPU1   DEBUG  finished plugin loader
+L          989 M000  CPU1   DEBUG  Running plugin loader
+L          989 M000  CPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          989 M000  CPU3   DEBUG  Running plugin main setup
+L          990 M000  GPU1   USER   Plugin list check complete!
+L          989 M000  GPU0   DEBUG  Running plugin main setup
+L          990 M000  GPU1   INFO   Setting up the experiment
+L          990 M000  CPU2   DEBUG  Running plugin main setup
+L          990 M000  GPU1   DEBUG  Running plugin loader
+L          990 M000  GPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L          990 M000  CPU1   DEBUG  Running plugin main setup
+L          990 M000  GPU1   DEBUG  Running plugin main setup
+L          999 M000  CPU0   DEBUG  finished plugin loader
+L          999 M000  CPU0   DEBUG  Barrier 2: 6 processes expected: 
+L         1004 M000  CPU3   DEBUG  finished plugin loader
+L         1004 M000  GPU0   DEBUG  finished plugin loader
+L         1005 M000  CPU3   DEBUG  Barrier 2: 6 processes expected: 
+L         1005 M000  GPU0   DEBUG  Barrier 2: 6 processes expected: 
+L         1005 M000  CPU1   DEBUG  finished plugin loader
+L         1005 M000  CPU2   DEBUG  finished plugin loader
+L         1005 M000  CPU1   DEBUG  Barrier 2: 6 processes expected: 
+L         1006 M000  CPU2   DEBUG  Barrier 2: 6 processes expected: 
+L         1007 M000  GPU1   DEBUG  finished plugin loader
+L         1008 M000  GPU1   DEBUG  Barrier 2: 6 processes expected: 
+L         1008 M000  CPU2   DEBUG  Barrier 3: 6 processes expected: 
+L         1008 M000  CPU1   DEBUG  Barrier 3: 6 processes expected: 
+L         1008 M000  CPU3   DEBUG  Barrier 3: 6 processes expected: 
+L         1005 M000  CPU0   DEBUG  Barrier 3: 6 processes expected: 
+L         1008 M000  GPU1   DEBUG  Barrier 3: 6 processes expected: 
+L         1008 M000  GPU0   DEBUG  Barrier 3: 6 processes expected: 
+L         1006 M000  CPU0   DEBUG  Barrier 4: 6 processes expected: 
+L         1008 M000  GPU1   DEBUG  Barrier 4: 6 processes expected: 
+L         1008 M000  CPU2   DEBUG  Barrier 4: 6 processes expected: 
+L         1008 M000  CPU1   DEBUG  Barrier 4: 6 processes expected: 
+L         1008 M000  GPU0   DEBUG  Barrier 4: 6 processes expected: 
+L         1033 M000  CPU3   DEBUG  Barrier 4: 6 processes expected: 
+L         1031 M000  CPU0   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  GPU0   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  CPU3   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  CPU1   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  GPU1   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  CPU2   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  GPU0   DEBUG  Running plugin loader
+L         1033 M000  CPU3   DEBUG  Running plugin loader
+L         1033 M000  GPU1   DEBUG  Running plugin loader
+L         1033 M000  CPU2   DEBUG  Running plugin loader
+L         1033 M000  CPU1   DEBUG  Running plugin loader
+L         1033 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1034 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1033 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1034 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1031 M000  CPU0   DEBUG  Running plugin loader
+L         1031 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1032 M000  CPU0   DEBUG  Running plugin main setup
+L         1034 M000  CPU3   DEBUG  Running plugin main setup
+L         1034 M000  CPU1   DEBUG  Running plugin main setup
+L         1034 M000  CPU2   DEBUG  Running plugin main setup
+L         1034 M000  GPU0   DEBUG  Running plugin main setup
+L         1034 M000  GPU1   DEBUG  Running plugin main setup
+L         1034 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05b9d0> to 32
+L         1034 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05b9d0> to 1
+L         1035 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05b9d0> to 32
+L         1035 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2d05b9d0> to 1
+L         1037 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd50> to 32
+L         1037 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd50> to 1
+L         1037 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c769d0> to 32
+L         1037 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb04209d0> to 32
+L         1035 M000  CPU0   DEBUG  finished plugin loader
+L         1037 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c769d0> to 1
+L         1037 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb04209d0> to 1
+L         1037 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb54b50> to 32
+L         1037 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb54b50> to 1
+L         1035 M000  CPU0   INFO   Running transport_pre_plugin_list_run()
+L         1037 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd50> to 32
+L         1037 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f49910dcd50> to 1
+L         1035 M000  CPU0   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         1038 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c769d0> to 32
+L         1037 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb04209d0> to 32
+L         1038 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f82175209d0> to 32
+L         1038 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3331c769d0> to 1
+L         1037 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb54b50> to 32
+L         1037 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fb04209d0> to 1
+L         1038 M000  CPU3   DEBUG  finished plugin loader
+L         1037 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb54b50> to 1
+L         1038 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f82175209d0> to 1
+L         1038 M000  CPU1   DEBUG  finished plugin loader
+L         1038 M000  GPU0   DEBUG  finished plugin loader
+L         1038 M000  CPU3   INFO   Running transport_pre_plugin_list_run()
+L         1038 M000  CPU2   DEBUG  finished plugin loader
+L         1038 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f82175209d0> to 32
+L         1038 M000  GPU0   INFO   Running transport_pre_plugin_list_run()
+L         1038 M000  CPU3   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         1038 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f82175209d0> to 1
+L         1038 M000  CPU1   INFO   Running transport_pre_plugin_list_run()
+L         1038 M000  CPU2   INFO   Running transport_pre_plugin_list_run()
+L         1038 M000  CPU1   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         1038 M000  GPU0   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         1038 M000  GPU1   DEBUG  finished plugin loader
+L         1038 M000  CPU2   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         1039 M000  GPU1   INFO   Running transport_pre_plugin_list_run()
+L         1039 M000  GPU1   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         1059 M000  CPU3   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         1059 M000  GPU0   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         1059 M000  CPU2   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         1057 M000  CPU0   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         1059 M000  CPU1   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         1059 M000  GPU1   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         1060 M000  CPU2   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         1059 M000  CPU1   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         1057 M000  CPU0   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         1060 M000  GPU1   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         1059 M000  GPU0   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         1059 M000  CPU3   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         1060 M000  GPU1   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         1057 M000  CPU0   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         1060 M000  CPU2   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         1059 M000  GPU0   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         1059 M000  CPU3   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         1059 M000  CPU1   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         1060 M000  GPU0   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         1060 M000  GPU1   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         1057 M000  CPU0   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         1060 M000  CPU3   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         1060 M000  CPU1   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         1060 M000  CPU2   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         1060 M000  GPU0   DEBUG  shape = (2048, 2048, 2048)
+L         1058 M000  CPU0   DEBUG  shape = (2048, 2048, 2048)
+L         1060 M000  CPU2   DEBUG  shape = (2048, 2048, 2048)
+L         1060 M000  GPU1   DEBUG  shape = (2048, 2048, 2048)
+L         1060 M000  CPU1   DEBUG  shape = (2048, 2048, 2048)
+L         1060 M000  CPU3   DEBUG  shape = (2048, 2048, 2048)
+L         1061 M000  CPU2   DEBUG  chunk size (2048, 96, 2048)
+L         1061 M000  GPU1   DEBUG  chunk size (2048, 96, 2048)
+L         1061 M000  CPU1   DEBUG  chunk size (2048, 96, 2048)
+L         1059 M000  CPU0   DEBUG  chunk size (2048, 96, 2048)
+L         1061 M000  GPU0   DEBUG  chunk size (2048, 96, 2048)
+L         1061 M000  GPU1   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         1061 M000  CPU1   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         1059 M000  CPU0   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         1061 M000  GPU0   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         1061 M000  CPU3   DEBUG  chunk size (2048, 96, 2048)
+L         1061 M000  CPU2   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         1061 M000  CPU3   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         1059 M000  CPU0   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         1062 M000  GPU1   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         1061 M000  GPU0   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         1062 M000  CPU2   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         1061 M000  CPU1   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         1061 M000  CPU3   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         1061 M000  CPU1   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         1059 M000  CPU0   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         1062 M000  GPU1   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         1062 M000  CPU2   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         1062 M000  CPU3   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         1061 M000  GPU0   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         1064 M000  CPU1   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         1064 M000  GPU0   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         1064 M000  CPU2   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         1064 M000  GPU1   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         1061 M000  CPU0   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         1064 M000  CPU3   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         1064 M000  GPU0   DEBUG  Running plugin loader
+L         1064 M000  CPU1   DEBUG  Running plugin loader
+L         1064 M000  GPU1   DEBUG  Running plugin loader
+L         1064 M000  CPU2   DEBUG  Running plugin loader
+L         1064 M000  CPU3   DEBUG  Running plugin loader
+L         1062 M000  CPU0   DEBUG  Running plugin loader
+L         1064 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1064 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1064 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1064 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1062 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1064 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         1065 M000  GPU0   DEBUG  Running plugin main setup
+L         1065 M000  GPU1   DEBUG  Running plugin main setup
+L         1063 M000  CPU0   DEBUG  Running plugin main setup
+L         1065 M000  CPU2   DEBUG  Running plugin main setup
+L         1065 M000  CPU1   DEBUG  Running plugin main setup
+L         1065 M000  CPU3   DEBUG  Running plugin main setup
+L         1068 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33314e9910> to 32
+L         1068 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33314e9910> to 1
+L         1065 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2c8ce910> to 32
+L         1068 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8216d93910> to 32
+L         1068 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fafc93910> to 32
+L         1065 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2c8ce910> to 1
+L         1068 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb5d210> to 32
+L         1068 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fafc93910> to 1
+L         1068 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8216d93910> to 1
+L         1068 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb5d210> to 1
+L         1068 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33314e9910> to 32
+L         1068 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33314e9910> to 1
+L         1066 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2c8ce910> to 32
+L         1068 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fafc93910> to 32
+L         1068 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5fafc93910> to 1
+L         1066 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7fdc2c8ce910> to 1
+L         1068 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499095a150> to 32
+L         1068 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8216d93910> to 32
+L         1068 M000  CPU2   DEBUG  finished plugin loader
+L         1068 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8216d93910> to 1
+L         1068 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb5d210> to 32
+L         1068 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499095a150> to 1
+L         1068 M000  CPU2   USER   *Running the AstraReconGpu plugin*
+L         1068 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f273fb5d210> to 1
+L         1068 M000  CPU1   DEBUG  finished plugin loader
+L         1069 M000  GPU1   DEBUG  finished plugin loader
+L         1066 M000  CPU0   DEBUG  finished plugin loader
+L         1068 M000  GPU0   DEBUG  finished plugin loader
+L         1068 M000  CPU1   USER   *Running the AstraReconGpu plugin*
+L         1069 M000  GPU1   USER   *Running the AstraReconGpu plugin*
+L         1066 M000  CPU0   USER   *Running the AstraReconGpu plugin*
+L         1068 M000  GPU0   USER   *Running the AstraReconGpu plugin*
+L         1069 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499095a150> to 32
+*Running the AstraReconGpu plugin*
+L         1069 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f499095a150> to 1
+L         1069 M000  CPU3   DEBUG  finished plugin loader
+L         1069 M000  CPU3   USER   *Running the AstraReconGpu plugin*
+L         1067 M000  CPU0   DEBUG  Barrier 14: 6 processes expected: 
+L         1069 M000  CPU3   DEBUG  Barrier 14: 6 processes expected: 
+L         1069 M000  GPU0   DEBUG  Barrier 14: 6 processes expected: 
+L         1070 M000  CPU2   DEBUG  Barrier 14: 6 processes expected: 
+L         1069 M000  CPU1   DEBUG  Barrier 14: 6 processes expected: 
+L         1070 M000  GPU1   DEBUG  Barrier 14: 6 processes expected: 
+L         1070 M000  CPU3   INFO   Not a GPU process: Waiting...
+L         1067 M000  CPU0   INFO   Not a GPU process: Waiting...
+L         1070 M000  CPU2   INFO   Not a GPU process: Waiting...
+L         1069 M000  CPU1   INFO   Not a GPU process: Waiting...
+L         1069 M000  GPU0   DEBUG  Running the GPU process 0 with GPU index 0
+L         1070 M000  GPU1   DEBUG  Running the GPU process 1 with GPU index 1
+L         1069 M000  CPU1   DEBUG  Barrier 15: 6 processes expected: 
+L         1067 M000  CPU0   DEBUG  Barrier 15: 6 processes expected: 
+L         1070 M000  CPU2   DEBUG  Barrier 15: 6 processes expected: 
+L         1070 M000  GPU0   INFO   AstraReconGpu.pre_process
+L         1070 M000  GPU1   INFO   AstraReconGpu.pre_process
+L         1070 M000  CPU3   DEBUG  Barrier 15: 6 processes expected: 
+L         1070 M000  GPU1   DEBUG  Experimental Parameters for AstraReconGpu End
+L         1070 M000  GPU0   DEBUG  Experimental Parameters for AstraReconGpu End
+L         1070 M000  GPU0   DEBUG  in data (tomo) shape = (1143, 2048, 2048)
+L         1070 M000  GPU1   DEBUG  in data (tomo) shape = (1143, 2048, 2048)
+L         1070 M000  GPU0   DEBUG  out data (tomo) shape = (1143, 2048, 2048)
+L         1070 M000  GPU1   DEBUG  out data (tomo) shape = (1143, 2048, 2048)
+L         1125 M000  GPU0   DEBUG  Barrier 15: 2 processes expected: Pre-process completed for AstraReconGpu
+L         1126 M000  GPU1   DEBUG  Barrier 15: 2 processes expected: Pre-process completed for AstraReconGpu
+L         1126 M000  GPU0   INFO   AstraReconGpu.process_frames
+L         1127 M000  GPU1   INFO   AstraReconGpu.process_frames
+L         1151 M000  GPU0   DEBUG  Barrier 16: 2 processes expected: Checkpointing initialise.
+L         1151 M000  GPU1   DEBUG  Barrier 16: 2 processes expected: Checkpointing initialise.
+L         1151 M000  GPU0   USER   AstraReconGpu -   0% complete
+L         1152 M000  GPU1   USER   AstraReconGpu -   0% complete
+AstraReconGpu -   0% complete
+/dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/savu/plugins/reconstructions/base_recon.py:1: RuntimeWarning: divide by zero encountered in log
+  # Copyright 2014 Diamond Light Source Ltd.
+L        21166 M000  GPU1   USER   AstraReconGpu -   3% complete
+L        21182 M000  GPU0   USER   AstraReconGpu -   3% complete
+AstraReconGpu -   3% complete
+L        38654 M000  GPU1   USER   AstraReconGpu -   6% complete
+L        38669 M000  GPU0   USER   AstraReconGpu -   6% complete
+AstraReconGpu -   6% complete
+L        56701 M000  GPU1   USER   AstraReconGpu -   9% complete
+L        56821 M000  GPU0   USER   AstraReconGpu -   9% complete
+AstraReconGpu -   9% complete
+L        73942 M000  GPU1   USER   AstraReconGpu -  12% complete
+L        74078 M000  GPU0   USER   AstraReconGpu -  12% complete
+AstraReconGpu -  12% complete
+L        91917 M000  GPU1   USER   AstraReconGpu -  15% complete
+L        91978 M000  GPU0   USER   AstraReconGpu -  15% complete
+AstraReconGpu -  15% complete
+L       109637 M000  GPU0   USER   AstraReconGpu -  18% complete
+AstraReconGpu -  18% complete
+L       109756 M000  GPU1   USER   AstraReconGpu -  18% complete
+L       131032 M000  GPU0   USER   AstraReconGpu -  21% complete
+AstraReconGpu -  21% complete
+L       131103 M000  GPU1   USER   AstraReconGpu -  21% complete
+L       148626 M000  GPU0   USER   AstraReconGpu -  25% complete
+AstraReconGpu -  25% complete
+L       148689 M000  GPU1   USER   AstraReconGpu -  25% complete
+L       166862 M000  GPU0   USER   AstraReconGpu -  28% complete
+AstraReconGpu -  28% complete
+L       166969 M000  GPU1   USER   AstraReconGpu -  28% complete
+L       186738 M000  GPU1   USER   AstraReconGpu -  31% complete
+L       186820 M000  GPU0   USER   AstraReconGpu -  31% complete
+AstraReconGpu -  31% complete
+L       204849 M000  GPU1   USER   AstraReconGpu -  34% complete
+L       204958 M000  GPU0   USER   AstraReconGpu -  34% complete
+AstraReconGpu -  34% complete
+L       223261 M000  GPU0   USER   AstraReconGpu -  37% complete
+AstraReconGpu -  37% complete
+L       223359 M000  GPU1   USER   AstraReconGpu -  37% complete
+L       243328 M000  GPU1   USER   AstraReconGpu -  40% complete
+L       243426 M000  GPU0   USER   AstraReconGpu -  40% complete
+AstraReconGpu -  40% complete
+L       261920 M000  GPU1   USER   AstraReconGpu -  43% complete
+L       262070 M000  GPU0   USER   AstraReconGpu -  43% complete
+AstraReconGpu -  43% complete
+L       280873 M000  GPU1   USER   AstraReconGpu -  46% complete
+L       281065 M000  GPU0   USER   AstraReconGpu -  46% complete
+AstraReconGpu -  46% complete
+L       300572 M000  GPU0   USER   AstraReconGpu -  50% complete
+AstraReconGpu -  50% complete
+L       300588 M000  GPU1   USER   AstraReconGpu -  50% complete
+L       319938 M000  GPU1   USER   AstraReconGpu -  53% complete
+L       319969 M000  GPU0   USER   AstraReconGpu -  53% complete
+AstraReconGpu -  53% complete
+L       339186 M000  GPU1   USER   AstraReconGpu -  56% complete
+L       339251 M000  GPU0   USER   AstraReconGpu -  56% complete
+AstraReconGpu -  56% complete
+L       358099 M000  GPU1   USER   AstraReconGpu -  59% complete
+L       358261 M000  GPU0   USER   AstraReconGpu -  59% complete
+AstraReconGpu -  59% complete
+L       377343 M000  GPU1   USER   AstraReconGpu -  62% complete
+L       377475 M000  GPU0   USER   AstraReconGpu -  62% complete
+AstraReconGpu -  62% complete
+L       396622 M000  GPU1   USER   AstraReconGpu -  65% complete
+L       396704 M000  GPU0   USER   AstraReconGpu -  65% complete
+AstraReconGpu -  65% complete
+L       415947 M000  GPU1   USER   AstraReconGpu -  68% complete
+L       416046 M000  GPU0   USER   AstraReconGpu -  68% complete
+AstraReconGpu -  68% complete
+L       434906 M000  GPU1   USER   AstraReconGpu -  71% complete
+L       435184 M000  GPU0   USER   AstraReconGpu -  71% complete
+AstraReconGpu -  71% complete
+L       454319 M000  GPU1   USER   AstraReconGpu -  75% complete
+L       454483 M000  GPU0   USER   AstraReconGpu -  75% complete
+AstraReconGpu -  75% complete
+L       473515 M000  GPU1   USER   AstraReconGpu -  78% complete
+L       473626 M000  GPU0   USER   AstraReconGpu -  78% complete
+AstraReconGpu -  78% complete
+L       493203 M000  GPU1   USER   AstraReconGpu -  81% complete
+L       493231 M000  GPU0   USER   AstraReconGpu -  81% complete
+AstraReconGpu -  81% complete
+L       512188 M000  GPU1   USER   AstraReconGpu -  84% complete
+L       512306 M000  GPU0   USER   AstraReconGpu -  84% complete
+AstraReconGpu -  84% complete
+L       531571 M000  GPU1   USER   AstraReconGpu -  87% complete
+L       531854 M000  GPU0   USER   AstraReconGpu -  87% complete
+AstraReconGpu -  87% complete
+L       550861 M000  GPU1   USER   AstraReconGpu -  90% complete
+L       551028 M000  GPU0   USER   AstraReconGpu -  90% complete
+AstraReconGpu -  90% complete
+L       570739 M000  GPU0   USER   AstraReconGpu -  93% complete
+AstraReconGpu -  93% complete
+L       570752 M000  GPU1   USER   AstraReconGpu -  93% complete
+L       590521 M000  GPU1   USER   AstraReconGpu -  96% complete
+L       590621 M000  GPU0   USER   AstraReconGpu -  96% complete
+AstraReconGpu -  96% complete
+/dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/savu/plugins/reconstructions/base_recon.py:1: RuntimeWarning: divide by zero encountered in log
+  # Copyright 2014 Diamond Light Source Ltd.
+L       610459 M000  GPU0   USER   AstraReconGpu - 100% complete
+AstraReconGpu - 100% complete
+L       610492 M000  GPU0   DEBUG  Barrier 17: 2 processes expected: Process_frames completed for AstraReconGpu
+L       610499 M000  GPU1   USER   AstraReconGpu - 100% complete
+L       610539 M000  GPU1   DEBUG  Barrier 17: 2 processes expected: Process_frames completed for AstraReconGpu
+L       610539 M000  GPU1   INFO   AstraReconGpu.post_process
+L       610539 M000  GPU0   INFO   AstraReconGpu.post_process
+L       610541 M000  GPU1   DEBUG  Barrier 18: 6 processes expected: 
+L       610540 M000  GPU0   DEBUG  Barrier 18: 6 processes expected: 
+L       610540 M000  GPU0   DEBUG  Barrier 19: 6 processes expected: Plugin returned from driver in Plugin Runner
+L       610541 M000  GPU1   DEBUG  Barrier 19: 6 processes expected: Plugin returned from driver in Plugin Runner
+L       610541 M000  CPU3   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L       610541 M000  CPU1   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L       610538 M000  CPU0   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L       610541 M000  CPU2   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L       610541 M000  GPU0   USER   AstraReconGpu : 6 processes report : Nothing to Report
+L       610539 M000  CPU0   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610541 M000  GPU1   DEBUG  Barrier 20: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610541 M000  CPU3   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610541 M000  CPU1   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+AstraReconGpu : 6 processes report : Nothing to Report
+L       610541 M000  CPU2   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610541 M000  GPU0   DEBUG  Barrier 20: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610541 M000  CPU1   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610539 M000  CPU0   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610542 M000  GPU1   DEBUG  Barrier 21: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610541 M000  GPU0   DEBUG  Barrier 21: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610542 M000  CPU2   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610547 M000  CPU3   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L       610547 M000  GPU0   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610547 M000  CPU3   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610547 M000  GPU1   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610545 M000  CPU0   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610547 M000  CPU2   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610547 M000  CPU1   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610547 M000  CPU2   DEBUG  Attempting to close the file 
+L       610547 M000  GPU0   DEBUG  Attempting to close the file 
+L       610547 M000  GPU1   DEBUG  Attempting to close the file 
+L       610545 M000  CPU0   DEBUG  Attempting to close the file 
+L       610547 M000  CPU1   DEBUG  Attempting to close the file 
+L       610547 M000  CPU3   DEBUG  Attempting to close the file 
+L       610548 M000  CPU1   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610546 M000  CPU0   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  CPU2   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610548 M000  GPU0   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  GPU1   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610548 M000  CPU3   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  GPU1   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  CPU1   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610547 M000  CPU0   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  GPU0   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  CPU3   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  CPU2   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610549 M000  GPU0   DEBUG  Re-opening the backing file out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L       610549 M000  GPU1   DEBUG  Re-opening the backing file out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L       610549 M000  CPU1   DEBUG  Re-opening the backing file out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L       610549 M000  CPU3   DEBUG  Re-opening the backing file out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L       610547 M000  CPU0   DEBUG  Re-opening the backing file out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L       610549 M000  CPU2   DEBUG  Re-opening the backing file out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L       610547 M000  CPU0   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L       610549 M000  GPU0   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L       610549 M000  GPU1   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L       610549 M000  CPU2   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L       610549 M000  CPU3   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L       610549 M000  CPU1   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h51
+L       610548 M000  CPU0   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L       610550 M000  GPU0   DEBUG  Barrier 25: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L       610550 M000  CPU2   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L       610550 M000  CPU1   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L       610550 M000  CPU3   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L       610550 M000  GPU1   DEBUG  Barrier 25: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h52
+L       610551 M000  CPU3   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  CPU2   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610550 M000  CPU1   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610550 M000  GPU0   DEBUG  Barrier 26: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  GPU1   DEBUG  Barrier 26: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610548 M000  CPU0   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  GPU0   DEBUG  Attempting to close the file 
+L       610551 M000  GPU1   DEBUG  Attempting to close the file 
+L       610551 M000  CPU2   DEBUG  Attempting to close the file 
+L       610551 M000  CPU1   DEBUG  Attempting to close the file 
+L       610548 M000  CPU0   DEBUG  Attempting to close the file 
+L       610551 M000  CPU3   DEBUG  Attempting to close the file 
+L       610551 M000  CPU1   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  CPU2   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  CPU3   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  GPU0   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  GPU1   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  CPU2   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  CPU3   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610549 M000  CPU0   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  GPU1   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  GPU0   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610549 M000  CPU0   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610551 M000  CPU1   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L       610558 M000  GPU0   DEBUG  Barrier 28: 6 processes expected: PluginRunner: plugin complete.
+L       610558 M000  GPU1   DEBUG  Barrier 28: 6 processes expected: PluginRunner: plugin complete.
+L       610558 M000  CPU1   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L       610556 M000  CPU0   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L       610558 M000  CPU3   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L       610558 M000  CPU2   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L       610559 M000  GPU1   DEBUG  Barrier 29: 6 processes expected: PluginRunner: No kill signal... continue.
+L       610556 M000  CPU0   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L       610558 M000  CPU3   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L       610558 M000  CPU1   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L       610559 M000  CPU2   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L       610558 M000  GPU0   DEBUG  Barrier 29: 6 processes expected: PluginRunner: No kill signal... continue.
+L       610560 M000  CPU1   INFO   Running transport_post_plugin_list_run
+L       610560 M000  GPU1   INFO   Running transport_post_plugin_list_run
+L       610557 M000  CPU0   INFO   Running transport_post_plugin_list_run
+L       610560 M000  CPU2   INFO   Running transport_post_plugin_list_run
+L       610560 M000  CPU3   INFO   Running transport_post_plugin_list_run
+L       610560 M000  GPU0   INFO   Running transport_post_plugin_list_run
+L       610560 M000  CPU3   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU1   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  GPU1   DEBUG  Barrier 30: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610557 M000  CPU0   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU2   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  GPU0   DEBUG  Barrier 30: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU3   DEBUG  Attempting to close the file 
+L       610560 M000  CPU1   DEBUG  Attempting to close the file 
+L       610560 M000  GPU1   DEBUG  Attempting to close the file 
+L       610558 M000  CPU0   DEBUG  Attempting to close the file 
+L       610560 M000  CPU2   DEBUG  Attempting to close the file 
+L       610560 M000  GPU0   DEBUG  Attempting to close the file 
+L       610558 M000  CPU0   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU2   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU3   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  GPU1   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  GPU0   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU1   DEBUG  File close successful: out/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  GPU1   DEBUG  Barrier 31: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610558 M000  CPU0   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU2   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU3   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  CPU1   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610560 M000  GPU0   DEBUG  Barrier 31: 6 processes expected: Hdf5Utils_close_fileout/20200422115331_flower_processed/tomo_p1_astra_recon_gpu.h5
+L       610561 M000  GPU1   USER   ***********************
+L       610558 M000  CPU0   USER   ***********************
+L       610560 M000  CPU1   USER   ***********************
+L       610561 M000  CPU2   USER   ***********************
+L       610560 M000  GPU0   USER   ***********************
+L       610560 M000  CPU3   USER   ***********************
+L       610561 M000  CPU2   USER   * Processing Complete *
+L       610558 M000  CPU0   USER   * Processing Complete *
+L       610560 M000  CPU1   USER   * Processing Complete *
+L       610560 M000  CPU3   USER   * Processing Complete *
+L       610560 M000  CPU1   USER   ***********************
+L       610561 M000  CPU2   USER   ***********************
+L       610558 M000  CPU0   USER   ***********************
+L       610560 M000  CPU3   USER   ***********************
+L       610561 M000  GPU1   USER   * Processing Complete *
+***********************
+L       610561 M000  GPU1   USER   ***********************
+L       610560 M000  GPU0   USER   * Processing Complete *
+* Processing Complete *
+L       610561 M000  GPU0   USER   ***********************
+***********************
+SAVU_MPI_LOCAL:: Process complete
+SAVU_MPI_LOCAL:: Running Job
+***********************************************
+	Running on 6 CPUs and 2 GPUs
+***********************************************
+savupath is: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg
+running on host: ws097.diamond.ac.uk
+Processes running are : 6
+running the savu mpi local job with requirements: GPU0,GPU1,CPU0,CPU1,CPU2,CPU3
+Using python at /dls_sw/apps/savu/2.4_RHEL7/miniconda/bin/python
+Running command: python /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/savu/tomo_recon.py out/20200422110328_dimitar/flower_processed.nxs flower_recon-10it.nxs out -n GPU0,GPU1,CPU0,CPU1,CPU2,CPU3 -v 
+L         2154 M000  GPU0   USER   User Log Started
+L         2154 M000  GPU0   USER   User Log location is 'out/20200422120345_flower_processed/user.log'
+L         2159 M000  GPU0   DEBUG  Rank : 0 - Size : 6 - host : ws097.diamond.ac.uk
+L         2159 M000  CPU3   DEBUG  Rank : 5 - Size : 6 - host : ws097.diamond.ac.uk
+L         2159 M000  GPU1   DEBUG  Rank : 1 - Size : 6 - host : ws097.diamond.ac.uk
+L         2160 M000  CPU1   DEBUG  Rank : 3 - Size : 6 - host : ws097.diamond.ac.uk
+L         2160 M000  CPU2   DEBUG  Rank : 4 - Size : 6 - host : ws097.diamond.ac.uk
+L         2159 M000  CPU0   DEBUG  Rank : 2 - Size : 6 - host : ws097.diamond.ac.uk
+L         2164 M000  CPU2   DEBUG  ip address is : 172.23.5.178
+L         2163 M000  CPU3   DEBUG  ip address is : 172.23.5.178
+L         2163 M000  CPU0   DEBUG  ip address is : 172.23.5.178
+L         2164 M000  GPU0   DEBUG  ip address is : 172.23.5.178
+L         2164 M000  CPU2   DEBUG  Waiting at the _barrier
+L         2163 M000  CPU3   DEBUG  Waiting at the _barrier
+L         2163 M000  GPU1   DEBUG  ip address is : 172.23.5.178
+L         2164 M000  GPU0   DEBUG  Waiting at the _barrier
+L         2164 M000  CPU0   DEBUG  Waiting at the _barrier
+L         2164 M000  GPU1   DEBUG  Waiting at the _barrier
+L         2164 M000  CPU1   DEBUG  ip address is : 172.23.5.178
+L         2165 M000  CPU1   DEBUG  Waiting at the _barrier
+L         2164 M000  CPU0   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L         2165 M000  CPU2   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L         2164 M000  CPU3   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L         2164 M000  GPU1   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L         2164 M000  GPU0   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L         2164 M000  CPU0   DEBUG  Waiting at the _barrier
+L         2165 M000  CPU2   DEBUG  Waiting at the _barrier
+L         2164 M000  CPU3   DEBUG  Waiting at the _barrier
+L         2164 M000  GPU1   DEBUG  Waiting at the _barrier
+L         2165 M000  GPU0   DEBUG  Waiting at the _barrier
+L         2165 M000  CPU1   DEBUG  LD_LIBRARY_PATH is /dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/openmpi/3.1.4/rhel7/x86_64/lib:/dls_sw/apps/cuda/9.2/lib64:/dls_sw/apps/fftw/3.3.7/64/6/lib
+L         2165 M000  CPU1   DEBUG  Waiting at the _barrier
+L         2165 M000  GPU0   DEBUG  {'verbose': True, 'log_path': 'out/20200422120345_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422120345_flower_processed', 'out_path': 'out/20200422120345_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422120345_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon-10it.nxs', 'email': None, 'nProcesses': 6, 'process': 0, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L         2165 M000  GPU1   DEBUG  {'verbose': True, 'log_path': 'out/20200422120345_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422120345_flower_processed', 'out_path': 'out/20200422120345_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422120345_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon-10it.nxs', 'email': None, 'nProcesses': 6, 'process': 1, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L         2165 M000  CPU0   DEBUG  {'verbose': True, 'log_path': 'out/20200422120345_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422120345_flower_processed', 'out_path': 'out/20200422120345_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422120345_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon-10it.nxs', 'email': None, 'nProcesses': 6, 'process': 2, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L         2165 M000  CPU2   DEBUG  {'verbose': True, 'log_path': 'out/20200422120345_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422120345_flower_processed', 'out_path': 'out/20200422120345_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422120345_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon-10it.nxs', 'email': None, 'nProcesses': 6, 'process': 4, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L         2164 M000  CPU3   DEBUG  {'verbose': True, 'log_path': 'out/20200422120345_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422120345_flower_processed', 'out_path': 'out/20200422120345_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422120345_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon-10it.nxs', 'email': None, 'nProcesses': 6, 'process': 5, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L         2165 M000  CPU1   DEBUG  {'verbose': True, 'log_path': 'out/20200422120345_flower_processed', 'lustre': False, 'dosna_connection_options': [], 'cluster': False, 'syslog_port': 514, 'syslog_server': 'localhost', 'inter_path': 'out/20200422120345_flower_processed', 'out_path': 'out/20200422120345_flower_processed', 'dosna_connection': None, 'checkpoint': None, 'out_folder': '20200422120345_flower_processed', 'transport': 'hdf5', 'template': None, 'bllog': None, 'process_file': 'flower_recon-10it.nxs', 'email': None, 'nProcesses': 6, 'process': 3, 'system_params': None, 'femail': None, 'test_state': 'False', 'mpi': True, 'datafile_name': 'flower_processed', 'processes': ['GPU0', 'GPU1', 'CPU0', 'CPU1', 'CPU2', 'CPU3'], 'dosna_engine': None, 'data_file': 'out/20200422110328_dimitar/flower_processed.nxs', 'dosna_backend': None, 'process_names': 'GPU0,GPU1,CPU0,CPU1,CPU2,CPU3', 'quiet': False, 'mode': 'full'}
+L         2168 M000  CPU3   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L         2168 M000  CPU1   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L         2168 M000  GPU0   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L         2168 M000  GPU1   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L         2168 M000  CPU0   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L         2169 M000  CPU2   INFO   Using the system parameters file: /dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/system_files/dls/system_parameters.yml
+L         2189 M000  CPU2   DEBUG  Testing nexus file
+L         2189 M000  CPU3   DEBUG  Testing nexus file
+L         2190 M000  CPU2   INFO   Running the plugin list check
+L         2190 M000  GPU0   DEBUG  Testing nexus file
+L         2190 M000  GPU0   INFO   Running the plugin list check
+L         2189 M000  GPU1   DEBUG  Testing nexus file
+L         2190 M000  CPU0   DEBUG  Testing nexus file
+L         2190 M000  GPU1   INFO   Running the plugin list check
+L         2190 M000  CPU0   INFO   Running the plugin list check
+L         2191 M000  CPU1   DEBUG  Testing nexus file
+L         2191 M000  CPU1   INFO   Running the plugin list check
+L         2190 M000  CPU3   INFO   Running the plugin list check
+L         4992 M000  CPU0   DEBUG  2 GPUs have been found.
+L         4992 M000  GPU1   DEBUG  2 GPUs have been found.
+L         4993 M000  CPU0   DEBUG  Running plugin loader
+L         4993 M000  GPU1   DEBUG  Running plugin loader
+L         4993 M000  CPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         4993 M000  GPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         4993 M000  CPU3   DEBUG  2 GPUs have been found.
+L         4994 M000  CPU1   DEBUG  2 GPUs have been found.
+L         4994 M000  GPU0   DEBUG  2 GPUs have been found.
+L         4994 M000  CPU2   DEBUG  2 GPUs have been found.
+L         4994 M000  CPU1   DEBUG  Running plugin loader
+L         4994 M000  GPU0   DEBUG  Running plugin loader
+L         4995 M000  CPU2   DEBUG  Running plugin loader
+L         4994 M000  CPU3   DEBUG  Running plugin loader
+L         4995 M000  CPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         4994 M000  GPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         4995 M000  CPU2   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         4994 M000  CPU3   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         4996 M000  GPU1   DEBUG  Running plugin main setup
+L         4996 M000  CPU0   DEBUG  Running plugin main setup
+L         4998 M000  GPU0   DEBUG  Running plugin main setup
+L         4998 M000  CPU1   DEBUG  Running plugin main setup
+L         4998 M000  CPU2   DEBUG  Running plugin main setup
+L         4998 M000  CPU3   DEBUG  Running plugin main setup
+L         5055 M000  GPU1   DEBUG  finished plugin loader
+L         5055 M000  CPU3   DEBUG  finished plugin loader
+L         5056 M000  CPU2   DEBUG  finished plugin loader
+L         5055 M000  GPU0   DEBUG  finished plugin loader
+L         5055 M000  GPU1   DEBUG  Barrier 0: 6 processes expected: 
+L         5055 M000  CPU3   DEBUG  Barrier 0: 6 processes expected: 
+L         5056 M000  CPU2   DEBUG  Barrier 0: 6 processes expected: 
+L         5056 M000  GPU0   DEBUG  Barrier 0: 6 processes expected: 
+L         5056 M000  CPU0   DEBUG  finished plugin loader
+L         5056 M000  CPU0   DEBUG  Barrier 0: 6 processes expected: 
+L         5057 M000  CPU1   DEBUG  finished plugin loader
+L         5057 M000  CPU1   DEBUG  Barrier 0: 6 processes expected: 
+L         5057 M000  GPU1   DEBUG  Running plugin loader
+L         5057 M000  CPU0   DEBUG  Running plugin loader
+L         5056 M000  CPU3   DEBUG  Running plugin loader
+L         5057 M000  CPU2   DEBUG  Running plugin loader
+L         5057 M000  CPU1   DEBUG  Running plugin loader
+L         5057 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5057 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5057 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5057 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5056 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5057 M000  GPU0   DEBUG  Running plugin loader
+L         5057 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5059 M000  GPU1   DEBUG  Running plugin main setup
+L         5059 M000  CPU3   DEBUG  Running plugin main setup
+L         5060 M000  CPU2   DEBUG  Running plugin main setup
+L         5060 M000  CPU0   DEBUG  Running plugin main setup
+L         5060 M000  CPU1   DEBUG  Running plugin main setup
+L         5060 M000  GPU0   DEBUG  Running plugin main setup
+L         5064 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87348baed0> to 32
+L         5064 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87348baed0> to 1
+L         5065 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c853ed0> to 32
+L         5064 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d75c3ed0> to 32
+L         5065 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c853ed0> to 1
+L         5064 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d75c3ed0> to 1
+L         5065 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87348baed0> to 32
+L         5065 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87348baed0> to 1
+L         5065 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824bac0ed0> to 32
+L         5066 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c853ed0> to 32
+L         5065 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d75c3ed0> to 32
+L         5065 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824bac0ed0> to 1
+L         5066 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c853ed0> to 1
+L         5065 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d75c3ed0> to 1
+L         5065 M000  GPU1   DEBUG  finished plugin loader
+L         5066 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300fb9ed0> to 32
+L         5066 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300fb9ed0> to 1
+L         5065 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824bac0ed0> to 32
+L         5066 M000  CPU2   DEBUG  finished plugin loader
+L         5066 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824bac0ed0> to 1
+L         5065 M000  CPU3   DEBUG  finished plugin loader
+L         5066 M000  GPU1   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L         5066 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300fb9ed0> to 32
+L         5066 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fdc4150> to 32
+L         5067 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300fb9ed0> to 1
+L         5066 M000  CPU0   DEBUG  finished plugin loader
+L         5067 M000  CPU2   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L         5066 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fdc4150> to 1
+L         5066 M000  CPU3   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L         5067 M000  CPU1   DEBUG  finished plugin loader
+L         5067 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fdc4150> to 32
+L         5067 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fdc4150> to 1
+L         5067 M000  CPU0   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L         5067 M000  GPU0   DEBUG  finished plugin loader
+L         5068 M000  CPU1   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L         5068 M000  GPU0   DEBUG  Importing the module savu.plugins.savers.hdf5_saver
+L         5077 M000  CPU3   DEBUG  Running plugin loader
+L         5078 M000  CPU2   DEBUG  Running plugin loader
+L         5078 M000  GPU0   DEBUG  Running plugin loader
+L         5077 M000  CPU3   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5077 M000  CPU0   DEBUG  Running plugin loader
+L         5078 M000  GPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5078 M000  CPU2   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5078 M000  CPU1   DEBUG  Running plugin loader
+L         5077 M000  CPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5078 M000  CPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5078 M000  CPU3   DEBUG  Running plugin main setup
+L         5078 M000  GPU0   DEBUG  Running plugin main setup
+L         5079 M000  CPU2   DEBUG  Running plugin main setup
+L         5078 M000  CPU0   DEBUG  Running plugin main setup
+L         5079 M000  CPU1   DEBUG  Running plugin main setup
+L         5082 M000  GPU1   DEBUG  Running plugin loader
+L         5083 M000  GPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5083 M000  GPU1   DEBUG  Running plugin main setup
+L         5101 M000  CPU2   DEBUG  finished plugin loader
+L         5101 M000  CPU2   DEBUG  Barrier 1: 6 processes expected: 
+L         5101 M000  GPU0   DEBUG  finished plugin loader
+L         5101 M000  GPU0   DEBUG  Barrier 1: 6 processes expected: 
+L         5100 M000  CPU3   DEBUG  finished plugin loader
+L         5100 M000  CPU3   DEBUG  Barrier 1: 6 processes expected: 
+L         5102 M000  CPU1   DEBUG  finished plugin loader
+L         5102 M000  CPU1   DEBUG  Barrier 1: 6 processes expected: 
+L         5102 M000  CPU0   DEBUG  finished plugin loader
+L         5102 M000  CPU0   DEBUG  Barrier 1: 6 processes expected: 
+L         5105 M000  GPU1   DEBUG  finished plugin loader
+L         5105 M000  GPU1   DEBUG  Barrier 1: 6 processes expected: 
+L         5106 M000  CPU0   DEBUG  Running plugin loader
+L         5105 M000  CPU3   DEBUG  Running plugin loader
+L         5106 M000  CPU1   DEBUG  Running plugin loader
+L         5106 M000  CPU2   DEBUG  Running plugin loader
+L         5106 M000  GPU0   DEBUG  Running plugin loader
+L         5106 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5106 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5106 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5106 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5106 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5106 M000  GPU1   DEBUG  Running plugin loader
+L         5106 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5108 M000  CPU2   DEBUG  Running plugin main setup
+L         5107 M000  CPU3   DEBUG  Running plugin main setup
+L         5107 M000  GPU0   DEBUG  Running plugin main setup
+L         5107 M000  CPU0   DEBUG  Running plugin main setup
+L         5108 M000  CPU1   DEBUG  Running plugin main setup
+L         5107 M000  GPU1   DEBUG  Running plugin main setup
+L         5112 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800d50> to 32
+L         5112 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fddff90> to 32
+L         5112 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800d50> to 1
+L         5112 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fddff90> to 1
+L         5111 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d50> to 32
+L         5111 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d50> to 1
+L         5112 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66d50> to 32
+L         5112 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800d50> to 32
+L         5112 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6dd50> to 32
+L         5112 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800d50> to 1
+L         5112 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fddff90> to 32
+L         5112 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66d50> to 1
+L         5112 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7fddff90> to 1
+L         5112 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6dd50> to 1
+L         5112 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d50> to 32
+L         5113 M000  CPU2   DEBUG  finished plugin loader
+L         5112 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d50> to 1
+L         5112 M000  GPU0   DEBUG  finished plugin loader
+L         5113 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66d50> to 32
+L         5112 M000  CPU3   DEBUG  finished plugin loader
+L         5113 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66d50> to 1
+L         5112 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6dd50> to 32
+L         5113 M000  CPU2   USER   Plugin list check complete!
+L         5112 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6dd50> to 1
+L         5113 M000  CPU2   INFO   Setting up the experiment
+L         5112 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867d50> to 32
+L         5113 M000  GPU0   USER   Plugin list check complete!
+L         5113 M000  CPU2   DEBUG  Running plugin loader
+L         5113 M000  CPU1   DEBUG  finished plugin loader
+L         5113 M000  CPU2   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5113 M000  CPU0   DEBUG  finished plugin loader
+L         5112 M000  CPU3   USER   Plugin list check complete!
+L         5112 M000  CPU3   INFO   Setting up the experiment
+L         5113 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867d50> to 1
+Plugin list check complete!
+L         5113 M000  CPU3   DEBUG  Running plugin loader
+L         5113 M000  GPU0   INFO   Setting up the experiment
+L         5113 M000  CPU3   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5113 M000  CPU1   USER   Plugin list check complete!
+L         5113 M000  GPU0   DEBUG  Running plugin loader
+L         5113 M000  CPU1   INFO   Setting up the experiment
+L         5113 M000  GPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5113 M000  CPU0   USER   Plugin list check complete!
+L         5114 M000  CPU1   DEBUG  Running plugin loader
+L         5113 M000  CPU0   INFO   Setting up the experiment
+L         5114 M000  CPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5113 M000  CPU0   DEBUG  Running plugin loader
+L         5114 M000  CPU2   DEBUG  Running plugin main setup
+L         5113 M000  CPU0   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5113 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867d50> to 32
+L         5113 M000  CPU3   DEBUG  Running plugin main setup
+L         5114 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867d50> to 1
+L         5114 M000  GPU0   DEBUG  Running plugin main setup
+L         5114 M000  CPU1   DEBUG  Running plugin main setup
+L         5114 M000  CPU0   DEBUG  Running plugin main setup
+L         5114 M000  GPU1   DEBUG  finished plugin loader
+L         5114 M000  GPU1   USER   Plugin list check complete!
+L         5115 M000  GPU1   INFO   Setting up the experiment
+L         5115 M000  GPU1   DEBUG  Running plugin loader
+L         5115 M000  GPU1   DEBUG  Importing the module savu.plugins.loaders.savu_nexus_loader
+L         5115 M000  GPU1   DEBUG  Running plugin main setup
+L         5132 M000  CPU2   DEBUG  finished plugin loader
+L         5133 M000  CPU2   DEBUG  Barrier 2: 6 processes expected: 
+L         5132 M000  CPU3   DEBUG  finished plugin loader
+L         5133 M000  CPU3   DEBUG  Barrier 2: 6 processes expected: 
+L         5133 M000  GPU0   DEBUG  finished plugin loader
+L         5134 M000  CPU1   DEBUG  finished plugin loader
+L         5134 M000  GPU0   DEBUG  Barrier 2: 6 processes expected: 
+L         5134 M000  CPU1   DEBUG  Barrier 2: 6 processes expected: 
+L         5134 M000  CPU0   DEBUG  finished plugin loader
+L         5135 M000  GPU1   DEBUG  finished plugin loader
+L         5135 M000  CPU0   DEBUG  Barrier 2: 6 processes expected: 
+L         5135 M000  GPU1   DEBUG  Barrier 2: 6 processes expected: 
+L         5135 M000  CPU0   DEBUG  Barrier 3: 6 processes expected: 
+L         5136 M000  CPU2   DEBUG  Barrier 3: 6 processes expected: 
+L         5135 M000  CPU3   DEBUG  Barrier 3: 6 processes expected: 
+L         5136 M000  GPU0   DEBUG  Barrier 3: 6 processes expected: 
+L         5136 M000  CPU1   DEBUG  Barrier 3: 6 processes expected: 
+L         5135 M000  GPU1   DEBUG  Barrier 3: 6 processes expected: 
+L         5136 M000  CPU1   DEBUG  Barrier 4: 6 processes expected: 
+L         5135 M000  CPU0   DEBUG  Barrier 4: 6 processes expected: 
+L         5136 M000  CPU2   DEBUG  Barrier 4: 6 processes expected: 
+L         5136 M000  GPU0   DEBUG  Barrier 4: 6 processes expected: 
+L         5135 M000  GPU1   DEBUG  Barrier 4: 6 processes expected: 
+L         5166 M000  CPU3   DEBUG  Barrier 4: 6 processes expected: 
+L         5166 M000  GPU0   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5167 M000  CPU1   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5167 M000  CPU2   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5166 M000  CPU3   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5166 M000  CPU0   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5167 M000  CPU2   DEBUG  Running plugin loader
+L         5167 M000  GPU0   DEBUG  Running plugin loader
+L         5167 M000  CPU1   DEBUG  Running plugin loader
+L         5166 M000  CPU3   DEBUG  Running plugin loader
+L         5166 M000  CPU0   DEBUG  Running plugin loader
+L         5167 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5167 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5167 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5166 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5166 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5166 M000  GPU1   DEBUG  Loading plugin savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5166 M000  GPU1   DEBUG  Running plugin loader
+L         5167 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5167 M000  CPU3   DEBUG  Running plugin main setup
+L         5168 M000  CPU2   DEBUG  Running plugin main setup
+L         5168 M000  GPU0   DEBUG  Running plugin main setup
+L         5168 M000  CPU1   DEBUG  Running plugin main setup
+L         5167 M000  CPU0   DEBUG  Running plugin main setup
+L         5168 M000  GPU1   DEBUG  Running plugin main setup
+L         5171 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800a10> to 32
+L         5171 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800a10> to 1
+L         5170 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d90> to 32
+L         5171 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f653b90> to 32
+L         5170 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d90> to 1
+L         5171 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f653b90> to 1
+L         5171 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66a10> to 32
+L         5171 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66a10> to 1
+L         5171 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800a10> to 32
+L         5171 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6da10> to 32
+L         5171 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c800a10> to 1
+L         5171 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6da10> to 1
+L         5171 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f653b90> to 32
+L         5171 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d90> to 32
+L         5171 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f653b90> to 1
+L         5171 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d7572d90> to 1
+L         5172 M000  CPU2   DEBUG  finished plugin loader
+L         5172 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66a10> to 32
+L         5171 M000  CPU3   DEBUG  finished plugin loader
+L         5171 M000  GPU0   DEBUG  finished plugin loader
+L         5172 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f3300f66a10> to 1
+L         5171 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6da10> to 32
+L         5172 M000  CPU2   INFO   Running transport_pre_plugin_list_run()
+L         5171 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824ba6da10> to 1
+L         5172 M000  CPU1   DEBUG  finished plugin loader
+L         5172 M000  GPU0   INFO   Running transport_pre_plugin_list_run()
+L         5171 M000  CPU3   INFO   Running transport_pre_plugin_list_run()
+L         5171 M000  CPU0   DEBUG  finished plugin loader
+L         5172 M000  CPU2   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         5172 M000  CPU1   INFO   Running transport_pre_plugin_list_run()
+L         5171 M000  CPU3   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         5172 M000  GPU0   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         5172 M000  CPU0   INFO   Running transport_pre_plugin_list_run()
+L         5172 M000  CPU1   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         5172 M000  CPU0   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         5172 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867a10> to 32
+L         5172 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867a10> to 1
+L         5172 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867a10> to 32
+L         5172 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f8734867a10> to 1
+L         5173 M000  GPU1   DEBUG  finished plugin loader
+L         5173 M000  GPU1   INFO   Running transport_pre_plugin_list_run()
+L         5173 M000  GPU1   DEBUG  Barrier 5: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L         5201 M000  CPU3   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         5202 M000  CPU2   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         5201 M000  GPU1   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         5202 M000  GPU0   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         5202 M000  CPU1   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         5201 M000  CPU0   DEBUG  Barrier 6: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L         5202 M000  CPU1   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         5202 M000  GPU1   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         5202 M000  GPU0   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         5202 M000  CPU2   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         5202 M000  CPU0   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         5201 M000  CPU3   DEBUG  Barrier 7: 6 processes expected: Hdf5Utils_create_entries1
+L         5202 M000  CPU2   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         5202 M000  CPU0   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         5202 M000  CPU1   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         5202 M000  GPU1   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         5202 M000  GPU0   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         5202 M000  CPU3   DEBUG  Barrier 8: 6 processes expected: Hdf5Utils_create_entries2
+L         5203 M000  CPU2   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         5202 M000  CPU3   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         5202 M000  CPU0   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         5203 M000  CPU1   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         5202 M000  GPU1   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         5202 M000  GPU0   DEBUG  Barrier 9: 6 processes expected: Hdf5Utils_create_entries3
+L         5203 M000  CPU2   DEBUG  shape = (2048, 2048, 2048)
+L         5203 M000  GPU1   DEBUG  shape = (2048, 2048, 2048)
+L         5203 M000  GPU0   DEBUG  shape = (2048, 2048, 2048)
+L         5203 M000  CPU0   DEBUG  shape = (2048, 2048, 2048)
+L         5203 M000  CPU1   DEBUG  shape = (2048, 2048, 2048)
+L         5202 M000  CPU3   DEBUG  shape = (2048, 2048, 2048)
+L         5204 M000  CPU2   DEBUG  chunk size (2048, 96, 2048)
+L         5204 M000  GPU1   DEBUG  chunk size (2048, 96, 2048)
+L         5204 M000  CPU2   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         5204 M000  CPU1   DEBUG  chunk size (2048, 96, 2048)
+L         5204 M000  GPU0   DEBUG  chunk size (2048, 96, 2048)
+L         5204 M000  CPU0   DEBUG  chunk size (2048, 96, 2048)
+L         5204 M000  GPU1   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         5204 M000  CPU0   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         5204 M000  CPU1   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         5204 M000  GPU0   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         5203 M000  CPU3   DEBUG  chunk size (2048, 96, 2048)
+L         5204 M000  CPU3   DEBUG  Barrier 10: 6 processes expected: Hdf5Utils_create_entries4
+L         5205 M000  CPU2   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         5204 M000  CPU3   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         5204 M000  GPU1   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         5205 M000  CPU1   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         5205 M000  GPU0   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         5204 M000  CPU0   DEBUG  Barrier 11: 6 processes expected: Hdf5Utils_create_entries5
+L         5205 M000  CPU2   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         5205 M000  CPU0   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         5205 M000  CPU1   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         5205 M000  GPU1   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         5204 M000  CPU3   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         5205 M000  GPU0   DEBUG  Barrier 12: 6 processes expected: Creating checkpoint folder.
+L         5207 M000  CPU3   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         5208 M000  CPU2   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         5208 M000  CPU1   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         5208 M000  CPU0   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         5208 M000  GPU0   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         5208 M000  GPU1   DEBUG  Barrier 13: 6 processes expected: Checkpointing initialise.
+L         5208 M000  GPU0   DEBUG  Running plugin loader
+L         5208 M000  CPU0   DEBUG  Running plugin loader
+L         5209 M000  CPU2   DEBUG  Running plugin loader
+L         5208 M000  GPU1   DEBUG  Running plugin loader
+L         5209 M000  CPU1   DEBUG  Running plugin loader
+L         5208 M000  GPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5209 M000  CPU2   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5208 M000  GPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5209 M000  CPU1   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5208 M000  CPU0   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5208 M000  CPU3   DEBUG  Running plugin loader
+L         5208 M000  CPU3   DEBUG  Importing the module savu.plugins.reconstructions.astra_recons.astra_recon_gpu
+L         5210 M000  CPU2   DEBUG  Running plugin main setup
+L         5209 M000  GPU1   DEBUG  Running plugin main setup
+L         5209 M000  GPU0   DEBUG  Running plugin main setup
+L         5209 M000  CPU0   DEBUG  Running plugin main setup
+L         5210 M000  CPU1   DEBUG  Running plugin main setup
+L         5209 M000  CPU3   DEBUG  Running plugin main setup
+L         5213 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c073950> to 32
+L         5213 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c073950> to 1
+L         5213 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87340da950> to 32
+L         5213 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87340da950> to 1
+L         5213 M000  CPU2   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c073950> to 32
+L         5213 M000  CPU2   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f171c073950> to 1
+L         5213 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824b2e0950> to 32
+L         5214 M000  CPU2   DEBUG  finished plugin loader
+L         5213 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d6df0190> to 32
+L         5213 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824b2e0950> to 1
+L         5214 M000  CPU2   USER   *Running the AstraReconGpu plugin*
+L         5213 M000  GPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87340da950> to 32
+L         5214 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33007d9950> to 32
+L         5213 M000  GPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f87340da950> to 1
+L         5213 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f65d250> to 32
+L         5214 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33007d9950> to 1
+L         5213 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f65d250> to 1
+L         5213 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d6df0190> to 1
+L         5213 M000  GPU1   DEBUG  finished plugin loader
+L         5213 M000  CPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824b2e0950> to 32
+L         5213 M000  GPU1   USER   *Running the AstraReconGpu plugin*
+L         5213 M000  CPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f824b2e0950> to 1
+L         5214 M000  CPU1   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33007d9950> to 32
+L         5214 M000  GPU0   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f65d250> to 32
+L         5214 M000  CPU1   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f33007d9950> to 1
+L         5214 M000  CPU0   DEBUG  finished plugin loader
+L         5214 M000  GPU0   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f5a7f65d250> to 1
+L         5214 M000  CPU0   USER   *Running the AstraReconGpu plugin*
+L         5214 M000  CPU1   DEBUG  finished plugin loader
+L         5214 M000  GPU0   DEBUG  finished plugin loader
+L         5214 M000  CPU1   USER   *Running the AstraReconGpu plugin*
+L         5214 M000  GPU0   USER   *Running the AstraReconGpu plugin*
+L         5214 M000  CPU3   DEBUG  Setting max frames transfer for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d6df0190> to 32
+L         5214 M000  CPU3   DEBUG  Setting max frames process for plugin <savu.plugins.reconstructions.astra_recons.astra_recon_gpu.AstraReconGpu object at 0x7f73d6df0190> to 1
+*Running the AstraReconGpu plugin*
+L         5214 M000  CPU3   DEBUG  finished plugin loader
+L         5214 M000  CPU3   USER   *Running the AstraReconGpu plugin*
+L         5215 M000  CPU2   DEBUG  Barrier 14: 6 processes expected: 
+L         5215 M000  CPU0   DEBUG  Barrier 14: 6 processes expected: 
+L         5215 M000  CPU1   DEBUG  Barrier 14: 6 processes expected: 
+L         5214 M000  CPU3   DEBUG  Barrier 14: 6 processes expected: 
+L         5215 M000  GPU1   DEBUG  Barrier 14: 6 processes expected: 
+L         5215 M000  GPU0   DEBUG  Barrier 14: 6 processes expected: 
+L         5215 M000  CPU1   INFO   Not a GPU process: Waiting...
+L         5215 M000  CPU2   INFO   Not a GPU process: Waiting...
+L         5215 M000  CPU0   INFO   Not a GPU process: Waiting...
+L         5215 M000  GPU0   DEBUG  Running the GPU process 0 with GPU index 0
+L         5215 M000  GPU1   DEBUG  Running the GPU process 1 with GPU index 1
+L         5215 M000  CPU0   DEBUG  Barrier 15: 6 processes expected: 
+L         5215 M000  CPU2   DEBUG  Barrier 15: 6 processes expected: 
+L         5215 M000  CPU1   DEBUG  Barrier 15: 6 processes expected: 
+L         5214 M000  CPU3   INFO   Not a GPU process: Waiting...
+L         5215 M000  GPU1   INFO   AstraReconGpu.pre_process
+L         5215 M000  GPU0   INFO   AstraReconGpu.pre_process
+L         5215 M000  CPU3   DEBUG  Barrier 15: 6 processes expected: 
+L         5215 M000  GPU0   DEBUG  Experimental Parameters for AstraReconGpu End
+L         5215 M000  GPU1   DEBUG  Experimental Parameters for AstraReconGpu End
+L         5215 M000  GPU1   DEBUG  in data (tomo) shape = (1143, 2048, 2048)
+L         5215 M000  GPU0   DEBUG  in data (tomo) shape = (1143, 2048, 2048)
+L         5215 M000  GPU1   DEBUG  out data (tomo) shape = (1143, 2048, 2048)
+L         5215 M000  GPU0   DEBUG  out data (tomo) shape = (1143, 2048, 2048)
+L         5278 M000  GPU1   DEBUG  Barrier 15: 2 processes expected: Pre-process completed for AstraReconGpu
+L         5286 M000  GPU0   DEBUG  Barrier 15: 2 processes expected: Pre-process completed for AstraReconGpu
+L         5286 M000  GPU0   INFO   AstraReconGpu.process_frames
+L         5286 M000  GPU1   INFO   AstraReconGpu.process_frames
+L         5315 M000  GPU1   DEBUG  Barrier 16: 2 processes expected: Checkpointing initialise.
+L         5315 M000  GPU0   DEBUG  Barrier 16: 2 processes expected: Checkpointing initialise.
+L         5315 M000  GPU1   USER   AstraReconGpu -   0% complete
+L         5315 M000  GPU0   USER   AstraReconGpu -   0% complete
+AstraReconGpu -   0% complete
+/dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/savu/plugins/reconstructions/base_recon.py:1: RuntimeWarning: divide by zero encountered in log
+  # Copyright 2014 Diamond Light Source Ltd.
+L        89457 M000  GPU1   USER   AstraReconGpu -   3% complete
+L        91819 M000  GPU0   USER   AstraReconGpu -   3% complete
+AstraReconGpu -   3% complete
+L       176880 M000  GPU1   USER   AstraReconGpu -   6% complete
+L       180789 M000  GPU0   USER   AstraReconGpu -   6% complete
+AstraReconGpu -   6% complete
+L       263111 M000  GPU1   USER   AstraReconGpu -   9% complete
+L       269262 M000  GPU0   USER   AstraReconGpu -   9% complete
+AstraReconGpu -   9% complete
+L       348925 M000  GPU1   USER   AstraReconGpu -  12% complete
+L       357540 M000  GPU0   USER   AstraReconGpu -  12% complete
+AstraReconGpu -  12% complete
+L       434719 M000  GPU1   USER   AstraReconGpu -  15% complete
+L       445591 M000  GPU0   USER   AstraReconGpu -  15% complete
+AstraReconGpu -  15% complete
+L       520694 M000  GPU1   USER   AstraReconGpu -  18% complete
+L       533960 M000  GPU0   USER   AstraReconGpu -  18% complete
+AstraReconGpu -  18% complete
+L       607136 M000  GPU1   USER   AstraReconGpu -  21% complete
+L       622201 M000  GPU0   USER   AstraReconGpu -  21% complete
+AstraReconGpu -  21% complete
+L       694068 M000  GPU1   USER   AstraReconGpu -  25% complete
+L       710607 M000  GPU0   USER   AstraReconGpu -  25% complete
+AstraReconGpu -  25% complete
+L       780560 M000  GPU1   USER   AstraReconGpu -  28% complete
+L       798885 M000  GPU0   USER   AstraReconGpu -  28% complete
+AstraReconGpu -  28% complete
+L       867516 M000  GPU1   USER   AstraReconGpu -  31% complete
+L       887376 M000  GPU0   USER   AstraReconGpu -  31% complete
+AstraReconGpu -  31% complete
+L       954429 M000  GPU1   USER   AstraReconGpu -  34% complete
+L       976001 M000  GPU0   USER   AstraReconGpu -  34% complete
+AstraReconGpu -  34% complete
+L      1041374 M000  GPU1   USER   AstraReconGpu -  37% complete
+L      1064435 M000  GPU0   USER   AstraReconGpu -  37% complete
+AstraReconGpu -  37% complete
+L      1128738 M000  GPU1   USER   AstraReconGpu -  40% complete
+L      1153287 M000  GPU0   USER   AstraReconGpu -  40% complete
+AstraReconGpu -  40% complete
+L      1216036 M000  GPU1   USER   AstraReconGpu -  43% complete
+L      1241656 M000  GPU0   USER   AstraReconGpu -  43% complete
+AstraReconGpu -  43% complete
+L      1303476 M000  GPU1   USER   AstraReconGpu -  46% complete
+L      1329782 M000  GPU0   USER   AstraReconGpu -  46% complete
+AstraReconGpu -  46% complete
+L      1390538 M000  GPU1   USER   AstraReconGpu -  50% complete
+L      1418010 M000  GPU0   USER   AstraReconGpu -  50% complete
+AstraReconGpu -  50% complete
+L      1477864 M000  GPU1   USER   AstraReconGpu -  53% complete
+L      1506618 M000  GPU0   USER   AstraReconGpu -  53% complete
+AstraReconGpu -  53% complete
+L      1564909 M000  GPU1   USER   AstraReconGpu -  56% complete
+L      1595193 M000  GPU0   USER   AstraReconGpu -  56% complete
+AstraReconGpu -  56% complete
+L      1652456 M000  GPU1   USER   AstraReconGpu -  59% complete
+L      1683876 M000  GPU0   USER   AstraReconGpu -  59% complete
+AstraReconGpu -  59% complete
+L      1739995 M000  GPU1   USER   AstraReconGpu -  62% complete
+L      1772553 M000  GPU0   USER   AstraReconGpu -  62% complete
+AstraReconGpu -  62% complete
+L      1827398 M000  GPU1   USER   AstraReconGpu -  65% complete
+L      1861327 M000  GPU0   USER   AstraReconGpu -  65% complete
+AstraReconGpu -  65% complete
+L      1915300 M000  GPU1   USER   AstraReconGpu -  68% complete
+L      1949653 M000  GPU0   USER   AstraReconGpu -  68% complete
+AstraReconGpu -  68% complete
+L      2002928 M000  GPU1   USER   AstraReconGpu -  71% complete
+L      2038355 M000  GPU0   USER   AstraReconGpu -  71% complete
+AstraReconGpu -  71% complete
+L      2090867 M000  GPU1   USER   AstraReconGpu -  75% complete
+L      2127700 M000  GPU0   USER   AstraReconGpu -  75% complete
+AstraReconGpu -  75% complete
+L      2179448 M000  GPU1   USER   AstraReconGpu -  78% complete
+L      2216144 M000  GPU0   USER   AstraReconGpu -  78% complete
+AstraReconGpu -  78% complete
+L      2267677 M000  GPU1   USER   AstraReconGpu -  81% complete
+L      2304547 M000  GPU0   USER   AstraReconGpu -  81% complete
+AstraReconGpu -  81% complete
+L      2355781 M000  GPU1   USER   AstraReconGpu -  84% complete
+L      2393117 M000  GPU0   USER   AstraReconGpu -  84% complete
+AstraReconGpu -  84% complete
+L      2443715 M000  GPU1   USER   AstraReconGpu -  87% complete
+L      2481734 M000  GPU0   USER   AstraReconGpu -  87% complete
+AstraReconGpu -  87% complete
+L      2531807 M000  GPU1   USER   AstraReconGpu -  90% complete
+L      2570102 M000  GPU0   USER   AstraReconGpu -  90% complete
+AstraReconGpu -  90% complete
+L      2619568 M000  GPU1   USER   AstraReconGpu -  93% complete
+L      2658260 M000  GPU0   USER   AstraReconGpu -  93% complete
+AstraReconGpu -  93% complete
+L      2708326 M000  GPU1   USER   AstraReconGpu -  96% complete
+L      2747211 M000  GPU0   USER   AstraReconGpu -  96% complete
+AstraReconGpu -  96% complete
+/dls_sw/apps/savu/2.4_RHEL7/miniconda/lib/python2.7/site-packages/savu-2.4-py2.7.egg/savu/plugins/reconstructions/base_recon.py:1: RuntimeWarning: divide by zero encountered in log
+  # Copyright 2014 Diamond Light Source Ltd.
+L      2796483 M000  GPU1   USER   AstraReconGpu - 100% complete
+L      2796531 M000  GPU1   DEBUG  Barrier 17: 2 processes expected: Process_frames completed for AstraReconGpu
+L      2835325 M000  GPU0   USER   AstraReconGpu - 100% complete
+AstraReconGpu - 100% complete
+L      2835383 M000  GPU0   DEBUG  Barrier 17: 2 processes expected: Process_frames completed for AstraReconGpu
+L      2835383 M000  GPU0   INFO   AstraReconGpu.post_process
+L      2835383 M000  GPU1   INFO   AstraReconGpu.post_process
+L      2835383 M000  GPU0   DEBUG  Barrier 18: 6 processes expected: 
+L      2835383 M000  GPU1   DEBUG  Barrier 18: 6 processes expected: 
+L      2835384 M000  GPU0   DEBUG  Barrier 19: 6 processes expected: Plugin returned from driver in Plugin Runner
+L      2835383 M000  GPU1   DEBUG  Barrier 19: 6 processes expected: Plugin returned from driver in Plugin Runner
+L      2835383 M000  CPU3   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L      2835384 M000  CPU1   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L      2835384 M000  CPU2   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L      2835383 M000  CPU0   DEBUG  Barrier 16: 6 processes expected: Plugin returned from driver in Plugin Runner
+L      2835384 M000  GPU0   USER   AstraReconGpu : 6 processes report : Nothing to Report
+L      2835384 M000  GPU1   DEBUG  Barrier 20: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835383 M000  CPU3   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835384 M000  CPU0   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835384 M000  CPU1   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835384 M000  CPU2   DEBUG  Barrier 17: 6 processes expected: PluginRunner_transport_post_plugin.
+AstraReconGpu : 6 processes report : Nothing to Report
+L      2835384 M000  GPU0   DEBUG  Barrier 20: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835385 M000  CPU2   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835384 M000  CPU0   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835385 M000  CPU1   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835384 M000  GPU0   DEBUG  Barrier 21: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835384 M000  GPU1   DEBUG  Barrier 21: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835391 M000  CPU3   DEBUG  Barrier 18: 6 processes expected: PluginRunner_transport_post_plugin.
+L      2835392 M000  CPU3   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835392 M000  GPU0   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835392 M000  GPU1   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835392 M000  CPU2   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835392 M000  CPU0   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835392 M000  CPU1   DEBUG  Barrier 19: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835392 M000  CPU0   DEBUG  Attempting to close the file 
+L      2835392 M000  GPU0   DEBUG  Attempting to close the file 
+L      2835392 M000  GPU1   DEBUG  Attempting to close the file 
+L      2835393 M000  CPU2   DEBUG  Attempting to close the file 
+L      2835392 M000  CPU1   DEBUG  Attempting to close the file 
+L      2835392 M000  CPU3   DEBUG  Attempting to close the file 
+L      2835393 M000  GPU1   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835393 M000  CPU3   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835394 M000  CPU1   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835393 M000  CPU0   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835393 M000  GPU0   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835394 M000  CPU2   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835393 M000  GPU1   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835394 M000  GPU0   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835394 M000  CPU1   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835393 M000  CPU0   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835394 M000  CPU2   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835393 M000  CPU3   DEBUG  Barrier 20: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835394 M000  CPU2   DEBUG  Re-opening the backing file out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L      2835394 M000  GPU0   DEBUG  Re-opening the backing file out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L      2835394 M000  CPU1   DEBUG  Re-opening the backing file out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L      2835393 M000  CPU0   DEBUG  Re-opening the backing file out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L      2835393 M000  CPU3   DEBUG  Re-opening the backing file out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L      2835393 M000  GPU1   DEBUG  Re-opening the backing file out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5 in mode r
+L      2835394 M000  GPU0   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L      2835394 M000  CPU2   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L      2835394 M000  CPU1   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L      2835393 M000  CPU3   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L      2835393 M000  GPU1   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L      2835394 M000  CPU0   DEBUG  Barrier 21: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h51
+L      2835395 M000  GPU0   DEBUG  Barrier 25: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L      2835396 M000  CPU2   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L      2835395 M000  CPU0   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L      2835395 M000  CPU1   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L      2835395 M000  GPU1   DEBUG  Barrier 25: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L      2835395 M000  CPU3   DEBUG  Barrier 22: 6 processes expected: Hdf5Utils_open_backing_h5 %sout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h52
+L      2835395 M000  CPU3   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  CPU1   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835395 M000  GPU1   DEBUG  Barrier 26: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835395 M000  CPU0   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  CPU2   DEBUG  Barrier 23: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  GPU0   DEBUG  Barrier 26: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835395 M000  GPU1   DEBUG  Attempting to close the file 
+L      2835395 M000  CPU3   DEBUG  Attempting to close the file 
+L      2835395 M000  CPU0   DEBUG  Attempting to close the file 
+L      2835396 M000  CPU1   DEBUG  Attempting to close the file 
+L      2835396 M000  CPU2   DEBUG  Attempting to close the file 
+L      2835396 M000  GPU0   DEBUG  Attempting to close the file 
+L      2835396 M000  CPU2   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835395 M000  CPU3   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835395 M000  CPU0   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  GPU1   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  GPU0   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  CPU0   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  CPU2   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  CPU1   DEBUG  File close successful: out/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  GPU1   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  GPU0   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835396 M000  CPU1   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835395 M000  CPU3   DEBUG  Barrier 24: 6 processes expected: Hdf5Utils_close_fileout/20200422110328_dimitar/tomo_p2_median_filter.h5
+L      2835404 M000  GPU1   DEBUG  Barrier 28: 6 processes expected: PluginRunner: plugin complete.
+L      2835404 M000  CPU0   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L      2835404 M000  CPU1   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L      2835405 M000  CPU2   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L      2835404 M000  GPU0   DEBUG  Barrier 28: 6 processes expected: PluginRunner: plugin complete.
+L      2835404 M000  CPU3   DEBUG  Barrier 25: 6 processes expected: PluginRunner: plugin complete.
+L      2835405 M000  CPU2   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L      2835404 M000  GPU0   DEBUG  Barrier 29: 6 processes expected: PluginRunner: No kill signal... continue.
+L      2835404 M000  GPU1   DEBUG  Barrier 29: 6 processes expected: PluginRunner: No kill signal... continue.
+L      2835404 M000  CPU0   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L      2835405 M000  CPU1   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L      2835404 M000  CPU3   DEBUG  Barrier 26: 6 processes expected: PluginRunner: No kill signal... continue.
+L      2835406 M000  CPU1   INFO   Running transport_post_plugin_list_run
+L      2835406 M000  CPU2   INFO   Running transport_post_plugin_list_run
+L      2835406 M000  GPU0   INFO   Running transport_post_plugin_list_run
+L      2835406 M000  GPU1   INFO   Running transport_post_plugin_list_run
+L      2835405 M000  CPU3   INFO   Running transport_post_plugin_list_run
+L      2835406 M000  CPU0   INFO   Running transport_post_plugin_list_run
+L      2835406 M000  GPU1   DEBUG  Barrier 30: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU1   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835405 M000  CPU3   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU0   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  GPU0   DEBUG  Barrier 30: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU2   DEBUG  Barrier 27: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU3   DEBUG  Attempting to close the file 
+L      2835406 M000  GPU0   DEBUG  Attempting to close the file 
+L      2835406 M000  CPU0   DEBUG  Attempting to close the file 
+L      2835406 M000  CPU1   DEBUG  Attempting to close the file 
+L      2835406 M000  CPU2   DEBUG  Attempting to close the file 
+L      2835406 M000  GPU1   DEBUG  Attempting to close the file 
+L      2835407 M000  CPU1   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835407 M000  CPU2   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  GPU0   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU0   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  GPU1   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU3   DEBUG  File close successful: out/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU0   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835407 M000  CPU1   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  GPU1   DEBUG  Barrier 31: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835407 M000  CPU2   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  CPU3   DEBUG  Barrier 28: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835406 M000  GPU0   DEBUG  Barrier 31: 6 processes expected: Hdf5Utils_close_fileout/20200422120345_flower_processed/tomo_p1_astra_recon_gpu.h5
+L      2835407 M000  CPU2   USER   ***********************
+L      2835407 M000  CPU1   USER   ***********************
+L      2835406 M000  GPU1   USER   ***********************
+L      2835406 M000  CPU3   USER   ***********************
+L      2835406 M000  GPU0   USER   ***********************
+L      2835406 M000  CPU0   USER   ***********************
+L      2835406 M000  CPU3   USER   * Processing Complete *
+L      2835407 M000  CPU2   USER   * Processing Complete *
+L      2835407 M000  CPU1   USER   * Processing Complete *
+L      2835406 M000  CPU0   USER   * Processing Complete *
+L      2835407 M000  CPU1   USER   ***********************
+L      2835406 M000  CPU3   USER   ***********************
+L      2835407 M000  CPU2   USER   ***********************
+L      2835406 M000  CPU0   USER   ***********************
+L      2835406 M000  GPU1   USER   * Processing Complete *
+***********************
+L      2835406 M000  GPU1   USER   ***********************
+L      2835407 M000  GPU0   USER   * Processing Complete *
+* Processing Complete *
+L      2835407 M000  GPU0   USER   ***********************
+***********************
+SAVU_MPI_LOCAL:: Process complete

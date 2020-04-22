@@ -1,0 +1,47 @@
+
+	Command being timed: "savu out/20200422110328_dimitar/flower_processed.nxs flower_recon.nxs out"
+	User time (seconds): 707.72
+	System time (seconds): 493.08
+	Percent of CPU this job got: 98%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 20:17.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1381804
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1
+	Minor (reclaiming a frame) page faults: 124240833
+	Voluntary context switches: 68416
+	Involuntary context switches: 12628
+	Swaps: 0
+	File system inputs: 22335056
+	File system outputs: 67840344
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+	Command being timed: "savu out/20200422110328_dimitar/flower_processed.nxs flower_recon-10it.nxs out"
+	User time (seconds): 3269.28
+	System time (seconds): 1909.19
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 1:26:41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1617124
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 181
+	Minor (reclaiming a frame) page faults: 125652363
+	Voluntary context switches: 121377
+	Involuntary context switches: 23631
+	Swaps: 0
+	File system inputs: 22656640
+	File system outputs: 68160824
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

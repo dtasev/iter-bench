@@ -48,7 +48,7 @@ echo "Using python at $(which python)"
 
 echo "Running command: python $filename $datafile $processfile $outpath -n $CPUs -v $options"
 
-OMPI_MCA_opal_cuda_support=true PYTHONPATH=$savupath:$PYTHONPATH mpirun -np $nCPUs --use-hwthread-cpus \
+PYTHONPATH=$savupath:$PYTHONPATH mpirun -np $nCPUs --use-hwthread-cpus \
                                                                 -mca btl self,vader -mca orte_forward_job_control 1 \
                                                                 python $filename $datafile $processfile $outpath -n $CPUs -v $options
 
