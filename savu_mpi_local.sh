@@ -28,7 +28,7 @@ savupath=$(python -c "import savu; print(savu.__path__[0])")
 savupath=${savupath%/savu}
 echo "savupath is:" $savupath
 
-nCPUs=$((nNodes*nCoresPerNode))
+nCPUs=2
 
 # launch mpi job
 filename=$savupath/savu/tomo_recon.py
