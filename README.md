@@ -131,7 +131,8 @@ increase the performance.
 ### GTX 1080Ti
 As expected the 1080Ti has the fastest processing times. 
 
-When comparing the specifications of the clock speed, the expected speed-up would be `1.5x`. The real measurements show a much higher performance increase of `~1.75 - 2.2x`
+When comparing the specifications of the clock speed, the expected speed-up was `1.5x`. 
+The real measurements showed a much higher performance increase of `~1.75 - 2.2x`
 The reason for that is believed to be the significantly improved memory specifications of the GTX 1080Ti.
 
 ## Conclusion
