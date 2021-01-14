@@ -21,7 +21,7 @@ Nvidia GTX1070 [Specifications](https://www.techpowerup.com/gpu-specs/geforce-gt
  - 6.463 TFLOPS FP32 (float) performance
 
 Nvidia Quadro P2000 [Specifications](https://www.techpowerup.com/gpu-specs/quadro-p2000.c2931)
- - *0.5x* effective speed to GTX 1070
+ - *0.5x* clock speed to GTX 1070
  - 1076MHz base / 1480 MHz boost clock, *0.71x* base / *0.88x* boost to GTX 1070
  - 7008 MHz memory clock, *0.86x* to GTX 1070
  - 140 GB/s memory transfer, *0.55x* to GTX 1070
@@ -29,7 +29,7 @@ Nvidia Quadro P2000 [Specifications](https://www.techpowerup.com/gpu-specs/quadr
 
 
 Nvidia GTX1080Ti [Specifications](https://www.techpowerup.com/gpu-specs/geforce-gtx-1080-ti.c2877)
- - **1.5x** effective speed to GTX 1070
+ - **1.5x** clock speed to GTX 1070
  - 1481 MHz base / 1582 MHz boost clock, _0.98x_ base / _0.94x_ boost to GTX 1070
  - 11008 MHz memory clock, **1.38x** to GTX 1070
  - 484.4 GB/s memory transfer, **1.9x** to GTX 1070
@@ -129,13 +129,13 @@ treating them as two separate GPUs. It is possible that having a SLI bridge woul
 increase the performance.
 
 ### GTX 1080Ti
-As expected the 1080Ti has the fastest processing times.
-This GPU is performing faster than the effective speed difference from the specifications
-`~1.75 - 2.2x` is much higher than the expected `1.5x` from the effective speed. The reason for that is believed to
-be the significantly improved memory specifications of the GTX 1080Ti.
+As expected the 1080Ti has the fastest processing times. 
+
+When comparing the specifications of the clock speed, the expected speed-up would be `1.5x`. The real measurements show a much higher performance increase of `~1.75 - 2.2x`
+The reason for that is believed to be the significantly improved memory specifications of the GTX 1080Ti.
 
 ## Conclusion
-From these benchmarks it can be seen that the effective speed, usually shown in online benchmarking websites,
+From these benchmarks it can be seen that the clock speed, usually shown in online benchmarking websites,
 is not guaranteed to be accurate for this use case. It was found that looking at the
 `Float 32 TFLOPS` performance is a more accurate indicator of real world performance, as the
 difference between the cards on that specification are much closer to the measured performance.
